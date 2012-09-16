@@ -1,0 +1,12 @@
+<script>
+  $(document).ready(function() { 
+    //select all out-site link, make them opened in new tab.
+    //$('a[href^="http://"], a[href^="https://"]').attr('target', '_blank'); 
+    
+    var dateObj = new Date(new Date(document.lastModified).getTime()+8*3600*1000);
+    $('#lastedit').text(jQuery.timeago(dateObj)).css({
+      'font-weight':    'bold',
+      'color':          '#C71585'
+    });
+  });
+</script>
