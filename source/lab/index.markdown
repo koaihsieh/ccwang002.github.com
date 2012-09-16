@@ -6,7 +6,4 @@ comments: true
 sharing: false
 footer: true
 ---
-
-Last modified time: <span id='lastedit'></span>
-
 here is the new page of Lab
