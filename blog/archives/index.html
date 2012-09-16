@@ -17,7 +17,10 @@
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	
+	<script src='/lib/js/jquery.timeago.js' type="text/javascript"></script>
+<!-- Key.CSS -->
+
+
 </head>
 
 <body>
@@ -25,6 +28,7 @@
 <nav id="main-nav"><ul class="main">
 	<li><a href="/">Blog</a></li>
 	<li><a href="/blog/archives">Archives</a></li>
+	<li><a href="/lab">Lab</a></li>
 </ul>
 </nav>
 <nav id="mobile-nav">
@@ -33,6 +37,7 @@
 		<div class="container"><ul class="main">
 	<li><a href="/">Blog</a></li>
 	<li><a href="/blog/archives">Archives</a></li>
+	<li><a href="/lab">Lab</a></li>
 </ul>
 </div>
 	</div>
@@ -52,6 +57,8 @@
 		
 		
 		
+		<a class="github" href="https://github.com/ccwang002" title="GitHub">GitHub</a>
+		
 		
 		
 		
@@ -70,10 +77,13 @@
 		
 	
 	<div id="content" class="inner"></div>
-	<footer id="footer" class="inner">Copyright &copy; 2012
+	<footer id="footer" class="inner"><p>
+Copyright &copy; 2012
 
-    Your Name
+    - Your Name - 
 
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
 </footer>
 	<script src="/javascripts/slash.js"></script>
 <script src="/javascripts/jquery.fancybox.pack.js"></script>
@@ -87,6 +97,18 @@
 
 
 
+<script>
+  $(document).ready(function() { 
+    //select all out-site link, make them opened in new tab.
+    //$('a[href^="http://"], a[href^="https://"]').attr('target', '_blank'); 
+    
+    var dateObj = new Date(new Date(document.lastModified).getTime()+8*3600*1000);
+    $('#lastedit').text(jQuery.timeago(dateObj)).css({
+      'font-weight':    'bold',
+      'color':          '#C71585'
+    });
+  });
+</script>
 
 </body>
 </html>
