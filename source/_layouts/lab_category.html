@@ -7,14 +7,14 @@ layout: default
     <h1 class="title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
     {% endif %}
     <div class="entry-content">{{ content }}</div>
+</article>
 
-
-  </article>
-
+<article class="page">
+  <h1 class="title">Lastest Work Logs</h1>
   {% for post in site.categories["lab log"] limit:2 %}
   {% include archive_post.html %}
   {% endfor %}
-
+</article>
 
   {% unless page.sharing == false %}
   {% include post/sharing.html %}

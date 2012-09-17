@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://ccwang002.github.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: Liang's Blog
+subtitle:
+author: Liang
 simple_search: http://google.com/search
 description:
 
@@ -33,14 +33,13 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: category 
-category_title_prefix: "Category: "
 markdown: rdiscount
 pygments: false # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_link: "繼續閱讀"  # "Continue reading" link text at the bottom of excerpted articles
 
 titlecase: true       # Converts page and post titles to titlecase
 
@@ -90,8 +89,8 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: liangsblog
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id:
