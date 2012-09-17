@@ -1,0 +1,163 @@
+---
+layout: post
+title: "Work Log - 09/18"
+date: 2012-09-18 03:54
+comments: true
+categories: 
+ - lab log
+---
+
+## Install Bowtie
+Official site:  
+<http://bowtie-bio.sourceforge.net/>     
+Bowtie2 is for longer alignment, and it is still beta. pre-Compiled package for linux is available.
+
+## Install miRDeep2
+
+Official site:   
+<http://www.mdc-berlin.de/en/research/research_teams/systems_biology_of_gene_regulatory_elements/projects/miRDeep/index.html>
+
+<!-- more -->
+## Configuration
+
+modify the `.bash_profile` file. Add the following line:
+
+    $ export PATH = $PATH:~/bin
+
+link all the binary files to here
+
+    $ ln -s ~/miRNA/bowtie-0.12.8/bowtie~/bin/bowtie
+    $ ln -s ~/miRNA/bowtie-0.12.8/bowtie-build ~/bin/bowtie-build
+    $ ln -s ~/miRNA/bowtie-0.12.8/bowtie-inspect ~/bin/bowtie-inspect 
+
+## Turbo linux downloading 
+
+using `axel`([tutorial link](http://www.cyberciti.biz/tips/download-accelerator-for-linux-command-line-tools.html)) to download
+
+For example, 
+
+    $ axel -n 10 -a -v http://path.to/yourfile
+
+## Fix PyCurl bug
+
+refer to [here](http://code.google.com/p/wfuzz/wiki/PyCurlSSLBug)
+
+## `Bowtie` Indexing
+
+## `miRDeep2` Usage
+### Indexing
+First build an index of the genome. In here we use the pre-build index for *Homo sapiens* hg19 (or NCBI 37) [more info][info-about-hg19] from the `Bowtie` [website][bowtie-official].
+
+
+
+### Mapping
+Second we process reads and map them to the genome. We use the dataset [GSM957192]. We use the following 2 types of file:
+
+1. SRA raw data, processed by Galaxy `fastq-dump` into fastq file, which still preserved the 3' adaptor. SRA description is as follows:
+    * Accession: SRX157986
+    * Run: SRR518957
+    * Whole dataset, GEO Accession: [GSE39162](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE39162)
+2. Data-processed txt by the data provider, which is adapter-trimmed and after-QC.
+
+3. extra information for processing
+    * 3' adaptor: `TCGTATGCCGTCTTCTGCTTG`
+
+4. several option using `mapper.pl`
+
+
+``` 
+Read input file:
+-a              input file is seq.txt format
+-b              input file is qseq.txt format
+-c              input file is fasta format
+-e              input file is fastq format
+-d              input file is a config file (see miRDeep2 documentation).
+                options -a, -b or -c must be given with option -d.
+
+Preprocessing/mapping:
+-g              three-letter prefix for reads (by default 'seq')
+-h              parse to fasta format
+-i              convert rna to dna alphabet (to map against genome)
+-j              remove all entries that have a sequence that contains letters
+                other than a,c,g,t,u,n,A,C,G,T,U,N
+-k seq          clip 3' adapter sequence
+-l int          discard reads shorter than int nts, default = 18
+-m              collapse reads
+
+-p genome       map to genome (must be indexed by bowtie-build). The 'genome'
+                string must be the prefix of the bowtie index. For instance, if
+                the first indexed file is called 'h_sapiens_37_asm.1.ebwt' then
+                the prefix is 'h_sapiens_37_asm'.
+-q              map with one mismatch in the seed (mapping takes longer)
+
+-r int          a read is allowed to map up to this number of positions in the genome
+                default is 5 
+
+Output files:
+-s file         print processed reads to this file
+-t file         print read mappings to this file 
+
+Other:
+-u              do not remove directory with temporary files
+-v              outputs progress report
+
+-n              overwrite existing files
+
+-o              number of threads to use for bowtie 
+```
+
+
+    $ mapper.pl SRR518957.fa -c -j -k TCGTATGCCGTCTTCTGCTTG  -l 18 -m -p hg19 -s SRR518957_collapsed.fa -t SRR518957_vs_genome.arf -v -o 4 &> map-SRR518957.log &
+
+### miRBase data preparation
+I use Galaxy here.
+
+
+### miRDeep2 alignment
+First we need the original `hg19.fa` file, which can be download from [here](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/) in `.bit2` format.
+    
+    * Big-Zip files: [hg19-BigZip]
+    * Chromosome: [hg19-Chr]
+    
+Then we convert the `hg19.bit2` file to `fasta` format. The binary `twoBitToFa` can be found at [here](http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/)
+
+    $ twoBitToFa hg19.2bit hg19_allchr.fa
+
+Finally we index `hg19_allchr.fa` using `bowtie-build`:
+
+    $ bowtie-build hg19_allchr.fa hg19_allchr
+    
+It takes about **30 minutes**.
+
+Second will be the mapping, same as the previous steps:
+
+    $ mapper.pl SRR518957.fa -c -j -k TCGTATGCCGTCTTCTGCTTG  -l 18 -m -p hg19_allchr -s SRR518957_allchr_collapsed.fa -t SRR518957_allchr_vs_genome.arf -v -o 4 &> map-SRR518957-allchr.log &
+
+About 15% reads are mapped to at lease one genome.
+
+Third is the main part. we link several files to the working path:
+
+    $ ln -s ~/miRNA/bowtie-0.12.8/indexes/hg19_allchr.fa hg19_allchr.fa
+    $ ln -s ~/miRNA/miRBase-19/hairpin.fa hairpin.fa
+    $ ln -s ~/miRNA/miRBase-19/mature.fa mature.fa
+    
+Then we are ready to go.
+
+    $ nohup miRDeep2.pl SRR518957_allchr_collapsed.fa hg19_allchr.fa SRR518957_allchr_vs_genome.arf mature_ref_19_hsa.fa mature_ref_19_mmu_rno.fa precursors_ref_hsa.fa -t Human &> mirDeep2-core.log &
+
+[hg19-BigZip]: http://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/
+[hg19-Chr]: http://hgdownload.cse.ucsc.edu/goldenPath/hg19/chromosomes/
+
+### Terminology
+
+* QSEQ format: [QSEQ-intro]
+* EST = [EST-intro]
+
+Reference: [tutorial from 同濟大學][ref-1]
+
+[ref-1]: http://www.tongji.edu.cn/~czjiang/course/lab/bowtie.html
+[info-about-hg19]: http://www.ncbi.nlm.nih.gov/projects/mapview/map_search.cgi?taxid=9606
+[bowtie-official]: http://bowtie-bio.sourceforge.net/index.shtml
+[GSM957192]: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM957192
+[QSEQ-intro]: http://blog.kokocinski.net/index.php/qseq-files-format?blog=2
+[EST-intro]: http://en.wikipedia.org/wiki/Expressed_sequence_tag
