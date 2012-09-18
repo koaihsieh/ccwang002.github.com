@@ -1,0 +1,11 @@
+PASS	Basic Statistics	Galaxy14-[FASTQ_Groomer_on_data_7].fastqsanger
+FAIL	Per base sequence quality	Galaxy14-[FASTQ_Groomer_on_data_7].fastqsanger
+WARN	Per sequence quality scores	Galaxy14-[FASTQ_Groomer_on_data_7].fastqsanger
+FAIL	Per base sequence content	Galaxy14-[FASTQ_Groomer_on_data_7].fastqsanger
+FAIL	Per base GC content	Galaxy14-[FASTQ_Groomer_on_data_7].fastqsanger
+FAIL	Per sequence GC content	Galaxy14-[FASTQ_Groomer_on_data_7].fastqsanger
+PASS	Per base N content	Galaxy14-[FASTQ_Groomer_on_data_7].fastqsanger
+PASS	Sequence Length Distribution	Galaxy14-[FASTQ_Groomer_on_data_7].fastqsanger
+FAIL	Sequence Duplication Levels	Galaxy14-[FASTQ_Groomer_on_data_7].fastqsanger
+WARN	Overrepresented sequences	Galaxy14-[FASTQ_Groomer_on_data_7].fastqsanger
+FAIL	Kmer Content	Galaxy14-[FASTQ_Groomer_on_data_7].fastqsanger

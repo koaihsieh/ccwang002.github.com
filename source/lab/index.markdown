@@ -8,18 +8,25 @@ footer: true
 ---
 Here is Liang Bo Wang's work summary.
 
-##Log##
+* 09/14 [ [pptx][0914-1], [Workflow][0914-2], [FastQC report (before trim)][0914-3], [FastQC example (after trim)][0914-4] ]
 
-* [Initialization & Setup](#initial)
-* [08/03](0803.html)
-* [08/24](lab/0824.html)
-* [09/14](0914.html) [ [pptx](0914.pptx), [Workflow](data/0914/workflow-0914.pdf), [FastQC report (before trim)](data/0914/FastQC before trimming/fastqc_report.html), [FastQC example (after trim)](http://www.liacs.nl/~yanju/data/fastqc/FASTQC/RU_012_TTCAGC_L008_R1.fastx.trim.90_fastqc/fastqc_report.html)]
+* 09/16 [ [Workflow][0916-1] ]
 
-The log template is [here](log_template.html)
+
+[0914-1]: /lab/data/0914/0914.pptx 
+[0914-2]: /lab/data/0914/workflow-0914.pdf
+[0914-3]: /lab/data/0914/FastQC-before-trimming/fastqc_report.html
+[0914-4]: http://www.liacs.nl/~yanju/data/fastqc/FASTQC/RU_012_TTCAGC_L008_R1.fastx.trim.90_fastqc/fastqc_report.html
+
+[0916-1]: /lab/test
+
+
+
+
 
 ##miRNA
 
-* [Preparation](microRNA.html)
+* [Preparation](/lab/miRNA)
 
 ##Useful Links##
 * Galaxy setup: [here](Galaxy_Setup.html)
