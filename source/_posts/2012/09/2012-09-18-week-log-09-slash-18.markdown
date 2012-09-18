@@ -1,0 +1,75 @@
+---
+layout: post
+title: "Week Log - 09/18"
+date: 2012-09-18 19:36
+comments: true
+categories: 
+- lab log
+---
+
+* Today's data will be temporarily stored at [here](http://liang.ntuphoto.tw/lab-data/fasta/)
+
+
+## SRA to fastq/fasta
+
+* Use the NCBI SRA Toolkit. [Software Page]
+* For Ubuntu 64bit, use CentOS 64bit instead.
+* use the tool `fastq-dump` to convert `*.sra` into `*.fasta` by
+
+```
+# Direct usage
+$ fastq-dump --fasta -v *.sra
+
+# For network stability concern, alternatively use
+$ nohup fastq-dump --fasta -v *.sra &> fasta-dump-sra.log &
+```
+
+[Software Page]: http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software
+<!-- more -->
+
+
+## miRDeep2 Usage
+
+```
+$ nohup miRDeep2.pl SRR518957_allchr_collapsed.fa hg19_allchr.fa SRR518957_allchr_vs_genome.arf mature_ref_19_hsa.fa mature_ref_19_mmu_rno.fa precursors_ref_hsa.fa -t Human -P &> mirDeep2-core.log &
+```
+
+## Shell script files
+
+### Axel batch download
+
+* Generate the URLs
+
+{% codeblock make-url.sh lang:bash %}
+#!/bin/sh
+for ((index=47; index <=60; index++));do
+    echo "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP014/SRP014142/SRR5189$index/SRR5189$index.sra"
+done
+exit 0 
+{% endcodeblock %}
+
+    $ bash ./make-url.sh > download.list
+
+* Run `axel` per URL
+
+{% codeblock axel-batch.sh lang:bash %}
+#!/bin/bash
+# usage:  ./axel-batch.sh the-download-url.list
+cat $1 | while read LINE
+do
+    if [ -n "$LINE" ]; then
+        axel -n 10 `echo $LINE`
+    fi
+done
+{% endcodeblock %}
+
+### Run miRDeep2
+
+{% codeblock mirDeep-run.sh lang:bash %}
+#!/bin/sh
+for ((index=47; index <=60; index++));do
+    mapper.pl SRR5189$index.fasta -c -j -k TCGTATGCCGTCTTCTGCTTG  -l 18 -m -p hg19_allchr -s SRR5189$index-allchr-collapsed.fa -t SRR5189$index-allchr-vs-genome.arf -v -o 4 &> map-SRR5189$index-allchr.log 
+    miRDeep2.pl SRR5189$index-allchr-collapsed.fa hg19_allchr.fa SRR5189$index-allchr-vs-genome.arf mature_ref_19_hsa.fa mature_ref_19_mmu_rno.fa precursors_ref_hsa.fa -t Human -P &> mirDeep2-core-SRR5189$index.log
+done
+exit 0
+{% endcodeblock %}

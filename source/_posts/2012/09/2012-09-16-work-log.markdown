@@ -116,8 +116,8 @@ I use Galaxy here.
 ### miRDeep2 alignment
 First we need the original `hg19.fa` file, which can be download from [here](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/) in `.bit2` format.
     
-    * Big-Zip files: [hg19-BigZip]
-    * Chromosome: [hg19-Chr]
+* Big-Zip files: [hg19-BigZip]
+* Chromosome: [hg19-Chr]
     
 Then we convert the `hg19.bit2` file to `fasta` format. The binary `twoBitToFa` can be found at [here](http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/)
 
