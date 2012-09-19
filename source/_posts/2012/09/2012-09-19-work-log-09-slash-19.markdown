@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Work Log - 09/19"
+date: 2012-09-19 21:40
+comments: true
+categories: 
+ - lab log
+---
+
+
+## Paper Reading - 使用之 miRNA dataset 的來源論文
+* Paper title:   
+Identification of New MicroRNAs in Paired Normal and Tumor Breast Tissue Suggests a Dual Role for the *ERBB2/Her2* Gene
+* URL: <http://cancerres.aacrjournals.org/content/71/1/78>
