@@ -12,3 +12,78 @@ categories:
 * Paper title:   
 Identification of New MicroRNAs in Paired Normal and Tumor Breast Tissue Suggests a Dual Role for the *ERBB2/Her2* Gene
 * URL: <http://cancerres.aacrjournals.org/content/71/1/78>
+
+<!-- more -->
+### New miRNA sources
+* 49% were found in immunoprecipitates of Argonaute proteins.
+    * immunoprecipitates: 免疫蛋白沉澱
+    * Argonate protein: affect the behavior of RISC. see [wiki][Arg-wiki].
+*     
+    
+[Arg-wiki]: http://en.wikipedia.org/wiki/Argonaute
+
+
+## Data analysis - Top expressed miRNA in whole set
+
+For the whole expressed list are [here][result-expression].
+
+### hsa-miR-199a-5p
+* Entry on [miRBase][hsa-miR-199a-5p]
+* targets the Met proto-oncogene
+
+### hsa-mir-26a-2
+* Entry on [miRBase][hsa-mir-26a-2]
+* validated in many vertebrate species
+* expressed in neural tissue
+* response to low oxygen levels
+
+### hsa-mir-21
+* Entry on [miRBase][hsa-mir-21]
+* mammalian microRNA encoded by the MIR21 gene
+* mature miR-21 sequence is strongly conserved throughout evolution
+* **oncomir**
+* targets for microRNA-21: most of them are tumor suppressors
+
+### hsa-mir-103a-2
+* Entry on [miRBase][hsa-mir-103a-2]
+* insulin sensitivity, potential targets for the treatment of type 2 diabetes
+* also link to chronic pain and intestinal cell proliferation.
+
+### Other mir-/miR- reported to be related to cancer
+* [hsa-mir-143](http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000459)
+* [hsa-mir-16-2](http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000115)
+
+[result-expression]: http://liang.ntuphoto.tw/lab-data/0919-result/expression_19_09_2012_t_23_37_53.html
+[hsa-miR-199a-5p]: http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000242
+[hsa-mir-26a-2]: http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000750
+[hsa-mir-21]: http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000077
+[hsa-mir-103a-2]: http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000108
+
+## Data analysis - Newly Found miRNA in the paper
+
+The following data was created by myself, using miRDeep2.  
+The whole lists are specified at the [Supplementary Material 4][S4] of the paper.
+
+[S4]: http://cancerres.aacrjournals.org/content/suppl/2010/12/27/71.1.78.DC1/smaterials_4.xls
+
+|  Name       | Link for pdf   | Link for miRBase    
+|:------------|----------------|-------------------- 
+| miR-3117-3p | [mir-3117-pdf] | [mir-3117-miRBase]  
+| miR-4446-3p | [mir-4446-pdf] | [mir-4446-miRBase]    
+| miR-3065-5p | [mir-3065-pdf] | [mir-3065-miRBase]  
+| miR-3150b-3p | [mir-3150b-pdf] | [mir-3150b-miRBase]  
+
+* 上述的幾個 miRNA 在 miRBase 中都還沒有標明實際的 function
+
+[mir-3117-pdf]: http://liang.ntuphoto.tw/lab-data/0919-result/pdfs_19_09_2012_t_23_37_53/hsa-mir-3117.pdf
+[mir-3117-miRBase]: http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0014130
+
+[mir-4446-pdf]: http://liang.ntuphoto.tw/lab-data/0919-result/pdfs_19_09_2012_t_23_37_53/hsa-mir-4446.pdf
+[mir-4446-miRBase]: http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0016789
+
+[mir-3065-pdf]: http://liang.ntuphoto.tw/lab-data/0919-result/pdfs_19_09_2012_t_23_37_53/hsa-mir-3065.pdf
+[mir-3065-miRBase]: http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0014228
+
+[mir-3150b-pdf]: http://liang.ntuphoto.tw/lab-data/0919-result/pdfs_19_09_2012_t_23_37_53/hsa-mir-3150b.pdf
+[mir-3150b-miRBase]: http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0016426
+

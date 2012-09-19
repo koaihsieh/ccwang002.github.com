@@ -10,15 +10,15 @@ Here is Liang Bo Wang's work summary.
 
 * 09/14 [ [pptx][0914-1], [Workflow][0914-2], [FastQC report (before trim)][0914-3], [FastQC example (after trim)][0914-4] ]
 
-* 09/16 [ [Workflow][0916-1] ]
-
+* 09/19 [ [pptx][0919-1], [Workflow][0919-2] ]
 
 [0914-1]: /lab/data/0914/0914.pptx 
 [0914-2]: /lab/data/0914/workflow-0914.pdf
 [0914-3]: /lab/data/0914/FastQC-before-trimming/fastqc_report.html
 [0914-4]: http://www.liacs.nl/~yanju/data/fastqc/FASTQC/RU_012_TTCAGC_L008_R1.fastx.trim.90_fastqc/fastqc_report.html
 
-[0916-1]: /lab/test
+[0919-1]: /lab/data/0919/0919.pptx 
+[0919-2]: /lab/data/0919/workflow-0919.pdf
 
 
 
