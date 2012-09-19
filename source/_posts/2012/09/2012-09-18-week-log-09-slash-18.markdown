@@ -7,7 +7,7 @@ categories:
 - lab log
 ---
 
-* Today's data will be temporarily stored at [here](http://liang.ntuphoto.tw/lab-data/fasta/)
+* Today's data will be temporarily stored at [here](http://liang.ntuphoto.tw/lab-data/0918-result/)
 
 
 ## SRA to fastq/fasta
