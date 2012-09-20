@@ -109,6 +109,8 @@ task :new_post, :title do |t, args|
     post.puts "categories: "
     post.puts "---"
   end
+  puts "Opening: #{filename}"
+  system("open #{filename}")
 end
 
 # usage rake new_page[my-new-page] or rake new_page[my-new-page.html] or rake new_page (defaults to "new-page.markdown")
@@ -145,8 +147,21 @@ task :new_page, :filename do |t, args|
       page.puts "footer: true"
       page.puts "---"
     end
+    puts "Opening: #{file}"
+    system("open #{file}")
   else
     puts "Syntax error: #{args.filename} contains unsupported characters"
+  end
+end
+
+desc "Open the lastest post directory, which is source/_posts by default."
+task :open do 
+  current_post_dir = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y')}/#{Time.now.strftime('%m')}"
+  puts "Opening directory: #{current_post_dir}"  
+  unless Dir.exist?(current_post_dir)
+    abort("The directory does not exit. Rake aborted!")
+  else  
+    system("open #{current_post_dir}")
   end
 end
 

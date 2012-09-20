@@ -11,7 +11,7 @@ layout: default
 
 <article class="page">
   <h1 class="title">Lastest Work Logs</h1>
-  {% for post in site.categories["lab log"] limit:2 %}
+  {% for post in site.categories["lab log"] limit:5 %}
   {% include archive_post.html %}
   {% endfor %}
 </article>

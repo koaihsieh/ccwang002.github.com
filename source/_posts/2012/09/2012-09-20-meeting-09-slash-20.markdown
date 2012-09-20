@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Meeting - 09/20"
+date: 2012-09-20 18:12
+comments: true
+categories: 
+ - lab log
+---
+
+## Next To Do
+
+* 3' overhang detection
+* Verification novel miRNAs *in silico* 
+
+
+### 3' overhang detection
+
+### Verification novel miRNAs *in silico* 
