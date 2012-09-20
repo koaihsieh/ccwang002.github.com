@@ -1,0 +1,107 @@
+---
+layout: post
+title: "Work Log - 09/21"
+date: 2012-09-21 02:35
+comments: true
+categories: 
+ - lab log
+---
+
+## Blat novel miRNA
+
+* miRDeep result is [here](http://liang.ntuphoto.tw/lab-data/0919-result/result_19_09_2012_t_23_37_53.html)
+
+### chr9_11186, chr11_13759, … top sevens miRNAs
+* mmu-miR-98-5P
+* has been reported to be the human miRNA as well.
+* descirption on miRBase: [hsa-mir-98]
+* Gene family: Let-7
+
+[hsa-mir-98]: http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0000100
+
+
+<!-- more -->
+### chr1_1957	
+* mmu-miR-1843a-3p	
+* Also mapped to [SCARNA3](http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene&cmd=Retrieve&dopt=Graphics&list_uids=677679), which may be a [scaRNA](http://en.wikipedia.org/wiki/Small_Cajal_body-specific_RNA) by [UCSC blat](http://genome.ucsc.edu/cgi-bin/hgTracks?position=chr1:175937536-175937595&db=hg19&ss=../trash/hgSs/hgSs_genome_2168_b63000.pslx+../trash/hgSs/hgSs_genome_2168_b63000.fa&hgsid=298632209).
+* updated on 6-Sep-2012 … T_T
+
+### chr14_15676
+* mapped to [snoRNA28](), [ACA28 snoRNA](http://www.ncbi.nlm.nih.gov/nuccore/AJ609462?report=GenBank)
+
+### chr1_2018
+
+### chr17_18073
+* Also mapped to SCARNA6, [Homo sapiens ACA47 scaRNA gene](http://www.ncbi.nlm.nih.gov/nuccore/AJ609486?report=GenBank)
+
+### chr7_8791 (!!NOTICE!!)
+* Genome mapping
+  
+* BLAT result [here](http://genome.ucsc.edu/cgi-bin/hgBlat?org=Human&type=BLAT's%20guess&userSeq=guggggggauagaggcauggaauaggugcucugaccucugacccucuagc)
+
+  
+Chro | Strand | Score | UCSC Link  | Mapped on <BR> Gene Intron | Description |
+:----|--------|-------|------------|-------------|:-----------:|
+  7  |    +   |   50  | [chr-7]    | -           | -          
+  19 |    -   |   23  | [chr-19]   | -           | -
+  14 |    +   |   21  | [chr-14]   | [GZMH]      | cytotoxic, innate immune, target cell death
+ 
+[chr-7]: http://genome.ucsc.edu/cgi-bin/hgTracks?position=chr7:143079637-143079686&db=hg19&ss=../trash/hgSs/hgSs_genome_29c7_b67910.pslx+../trash/hgSs/hgSs_genome_29c7_b67910.fa&hgsid=298634193
+
+[chr-19]: http://genome.ucsc.edu/cgi-bin/hgTracks?position=chr19:16998866-16998946&db=hg19&ss=../trash/hgSs/hgSs_genome_29c7_b67910.pslx+../trash/hgSs/hgSs_genome_29c7_b67910.fa&hgsid=298634193
+
+[chr-14]: http://genome.ucsc.edu/cgi-bin/hgTracks?position=chr14:25077261-25077281&db=hg19&ss=../trash/hgSs/hgSs_genome_29c7_b67910.pslx+../trash/hgSs/hgSs_genome_29c7_b67910.fa&hgsid=298634193
+
+[GZMH]: http://genome.ucsc.edu/cgi-bin/hgGene?hgg_gene=uc010aly.1&hgg_prot=Q6XGZ1&hgg_chrom=chr14&hgg_start=25075692&hgg_end=25078864&hgg_type=knownGene&db=hg19&hgsid=298634193
+
+
+### chr11_13342
+
+* mapped to mmu-miR-3064-5p
+* has been reported to be the human miRNA as well.
+* descirption on miRBase: [hsa-mir-3065-5p], but the sequence is slightly different (with 3 up bps mismatched), and mapped to **chr17** instead of chr11
+* at chr11 mapped to [BTBD10] exon
+
+Chro | Strand | Score | UCSC Link  | Mapped on <BR> Gene Intron | Description |
+:----|--------|-------|------------|-------------|:-----------:|
+  11 |    -   |   51  | [chr-11]   | -           | -          
+  7  |    +   |   34  | [chr-6]    | [PCMT1]     | Type II class of protein <br> carboxyl methyltransferase enzymes
+
+[hsa-mir-3065-5p]: http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0017375
+[BTBD10]: http://genome.ucsc.edu/cgi-bin/hgGene?hgg_gene=uc009ygo.3&hgg_prot=B7Z2J1&hgg_chrom=chr11&hgg_start=13426875&hgg_end=13484838&hgg_type=knownGene&db=hg19&hgsid=298636961
+[PCMT1]: http://genome.ucsc.edu/cgi-bin/hgGene?hgg_gene=uc011eeg.2&hgg_prot=NP_001238980&hgg_chrom=chr6&hgg_start=150070830&hgg_end=150132557&hgg_type=knownGene&db=hg19&hgsid=298636961
+
+[chr-11]: http://genome.ucsc.edu/cgi-bin/hgTracks?position=chr11:13484706-13484756&db=hg19&ss=../trash/hgSs/hgSs_genome_73a6_b6d1d0.pslx+../trash/hgSs/hgSs_genome_73a6_b6d1d0.fa&hgsid=298636961
+
+[chr-6]: http://genome.ucsc.edu/cgi-bin/hgTracks?position=chr6:150115798-150115840&db=hg19&ss=../trash/hgSs/hgSs_genome_73a6_b6d1d0.pslx+../trash/hgSs/hgSs_genome_73a6_b6d1d0.fa&hgsid=298636961
+
+
+
+### chr9_11761
+* Also mapped to snoRA17
+
+### chr6_7182
+
+### chr22_20736
+* mapped on C22orf25 exon
+
+### chr2_2999
+* related to [mmu-miR-5107-5p](http://www.mirbase.org/cgi-bin/mature.pl?mature_acc=MIMAT0020615)
+* mapped to [SCARNA6](http://genome.ucsc.edu/cgi-bin/hgGene?hgg_gene=uc002vuf.1&hgg_prot=&hgg_chrom=chr2&hgg_start=234197321&hgg_end=234197587&hgg_type=knownGene&db=hg19&hgsid=298638963)
+
+### chr13_14817
+* related to [mmu-miR-455-5p](http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0003513)
+* description on miRBase: [hsa-mir-455-5p](http://www.mirbase.org/cgi-bin/mirna_entry.pl?acc=MI0003513), with sequence(3 up bps) and chr-mapping different
+* **May take a look later** of BLAT Result: [here](http://genome.ucsc.edu/cgi-bin/hgBlat?org=Human&type=BLAT's%20guess&userSeq=agaguagccacuagccacaugucaguucaugcuuuuaaggcuauaugugccuaguggcugcuguc)
+
+### chr17_17828(!!NOTICE!!)
+* [CASC3]: Homo sapiens cancer susceptibility candidate 3
+    *  Overexpressed in breast cancers and metastasis, as well as in gastric cancers. [Ref](http://www.uniprot.org/uniprot/O15234#ref2) 
+
+Chro | Strand | Score | UCSC Link  | Mapped on <BR> Gene Intron | Description |
+:----|--------|-------|------------|-------------|:-----------:|
+  17 |    +   |   63  | [chr-17]   | [CASC3]     | EJC, NMD       
+  
+[CASC3]: http://genome.ucsc.edu/cgi-bin/hgGene?hgg_gene=uc010cwt.1&hgg_prot=O15234&hgg_chrom=chr17&hgg_start=38296506&hgg_end=38327133&hgg_type=knownGene&db=hg19&hgsid=298639511
+
+[chr-17]: http://genome.ucsc.edu/cgi-bin/hgTracks?position=chr17:38318191-38318255&db=hg19&ss=../trash/hgSs/hgSs_genome_5b11_b731f0.pslx+../trash/hgSs/hgSs_genome_5b11_b731f0.fa&hgsid=298639511
