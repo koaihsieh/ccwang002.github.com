@@ -35,8 +35,7 @@ categories:
 * Also mapped to SCARNA6, [Homo sapiens ACA47 scaRNA gene](http://www.ncbi.nlm.nih.gov/nuccore/AJ609486?report=GenBank)
 
 ### chr7_8791 (!!NOTICE!!)
-* Genome mapping
-  
+ 
 * BLAT result [here](http://genome.ucsc.edu/cgi-bin/hgBlat?org=Human&type=BLAT's%20guess&userSeq=guggggggauagaggcauggaauaggugcucugaccucugacccucuagc)
 
   
