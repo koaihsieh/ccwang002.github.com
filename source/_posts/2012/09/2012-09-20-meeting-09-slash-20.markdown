@@ -5,14 +5,22 @@ date: 2012-09-20 18:12
 comments: true
 categories: 
  - lab log
+ - meeting
 ---
 
 ## Next To Do
 
 * 3' overhang detection
 * Verification novel miRNAs *in silico* 
-
+* merged into Galaxy
+* fastQC, CASAVA Flicker NGC QC tools
 
 ### 3' overhang detection
+* 找 Dicer 的固定切位
 
 ### Verification novel miRNAs *in silico* 
+* 用 70% 當基準
+* Use BLAT to find if the miRNA candidate is mapped to…
+    1. not any other small RNA (ex snoRNA…  )
+    2. intron of the gene
+* Find another dataset, then use BLAST (`blastn`) to find if the sequence exists

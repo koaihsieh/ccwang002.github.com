@@ -5,6 +5,7 @@ date: 2012-09-22 00:04
 comments: true
 categories: 
  - coding
+ - note
 ---
 
 Edit the file `.bash_profile`
@@ -21,7 +22,7 @@ $ which python
 $ which pip
 /usr/local/share/python/pip
 ```
-
+<!-- more -->
 ```
 liang@Liangs-MacBook-Air:~$ brew install python --framework
 ==> Downloading http://www.python.org/ftp/python/2.7.3/Python-2.7.3.tar.bz2
@@ -68,6 +69,22 @@ One can still alias the python3 and pip for py3.
 Python should be located at `/usr/bin/python`
 
 * Documentation for `virtualenvwrapper` <http://virtualenvwrapper.readthedocs.org/en/latest/index.html>
+
+### Numpy, Scipy
+
+1. Compile `bumpy` from source
+2. then install `scipy` by   
+{% codeblock %}
+$ pip install scipy
+{% endcodeblock %}
+3. test   
+{% codeblock %}
+$ python
+>>> import numpy as np
+>>> import scipy
+>>> np.test("full")
+>>> scipy.test()
+{% endcodeblock %}
 
 ### IPython
 

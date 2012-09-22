@@ -154,12 +154,11 @@ task :new_page, :filename do |t, args|
   end
 end
 
-desc "Open the lastest post directory, which is source/_posts by default."
+desc "Open the lastest posts (if they are created same day) from source, which is source/_posts by default."
 task :open do 
-  current_post_dir = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y')}/#{Time.now.strftime('%m')}"
-  puts "Opening directory: #{current_post_dir}"  
+  current_post_dir = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y')}/#{Time.now.strftime('%m')}"  
   unless Dir.exist?(current_post_dir)
-    abort("The directory does not exit. Rake aborted!")
+    abort("The directory #{current_post_dir} does not exit. Rake aborted!")
   else  
     last_edit_time  = Dir.glob("#{current_post_dir}/*.markdown").last.slice!(/\d{4}-\d{1,2}-\d{1,2}/)
     puts "Last edit time: #{last_edit_time}"
@@ -168,6 +167,17 @@ task :open do
       system("open #{file_path}")
     end
     #system("open #{current_post_dir}")
+  end
+end
+
+desc "Open the lastest post folder"
+task :opendir do
+  current_post_dir = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y')}/#{Time.now.strftime('%m')}" 
+  puts "Opening directory: #{current_post_dir}"
+  unless Dir.exist?(current_post_dir)
+    abort("The directory #{current_post_dir} does not exit. Rake aborted!")
+  else
+    system("open #{current_post_dir}")
   end
 end
 
