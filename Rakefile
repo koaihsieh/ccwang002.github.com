@@ -161,7 +161,13 @@ task :open do
   unless Dir.exist?(current_post_dir)
     abort("The directory does not exit. Rake aborted!")
   else  
-    system("open #{current_post_dir}")
+    last_edit_time  = Dir.glob("#{current_post_dir}/*.markdown").last.slice!(/\d{4}-\d{1,2}-\d{1,2}/)
+    puts "Last edit time: #{last_edit_time}"
+    Dir.glob("#{current_post_dir}/#{last_edit_time}-*.markdown") do |file_path|
+      puts "Opening file: #{file_path}"
+      system("open #{file_path}")
+    end
+    #system("open #{current_post_dir}")
   end
 end
 
