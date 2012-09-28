@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Meeting - 09/28"
+date: 2012-09-28 10:37
+comments: true
+categories: 
+ - lab log
+---
+
+## Small RNA pipeline
+
+### Tool Used
+
+* Tophat
+* SAMTools
+* DESeq
+* HTSeq
+
+### Terms
+
+* De Novo
+* RedHat Enterprise 6
+* RNA assembly
+* fDNA database
+
+## Next
+
+* 使用樂引學長的data
+* breast cancer gse25066
+
+## miscellaneous
+
+* 10:00 lab meeting, 16:30 Group Meeting 
+* 電二225
+
+
+
+

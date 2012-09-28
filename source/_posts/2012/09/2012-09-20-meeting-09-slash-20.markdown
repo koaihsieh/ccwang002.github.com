@@ -24,3 +24,6 @@ categories:
     1. not any other small RNA (ex snoRNA…  )
     2. intron of the gene
 * Find another dataset, then use BLAST (`blastn`) to find if the sequence exists
+
+### Miscellaneous 
+* Gene browser [Ensembl](http://www.ensembl.org/index.html)
