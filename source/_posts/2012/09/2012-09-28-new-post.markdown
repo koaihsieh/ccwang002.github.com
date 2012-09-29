@@ -1,0 +1,17 @@
+---
+layout: post
+title: "MathJax, Online courses"
+date: 2012-09-28 16:03
+comments: true
+categories: 
+ - note
+---
+
+## MathJax
+
+* <http://ccckmit.wikidot.com/tex:mathjax>
+
+* MathJax on Octopress
+    * <http://oblita.com/blog/2012/07/06/octopress-with-mathjax-by-kramdown/>
+    * <http://steshaw.org/blog/2012/02/09/hello-mathjax/>
+
