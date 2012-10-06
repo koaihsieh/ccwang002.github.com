@@ -7,8 +7,19 @@ sharing: true
 footer: true
 ---
 
+##Quorum Sensing##
+
 Title | Whole View | Zoom     |
-------|------------|----------|
-|![](igem/gif/QR-FA-a.gif)|
-without QS|![](igem/gif/QR-noQR-a.gif)|![](igem/gif/QR-noQR-b.gif) 
-with QS|![](igem/gif/QR-enableQR-a.gif)|![](igem/gif/QR-enableQR-b.gif)
+:------:|:------------:|:----------:|
+FA density|![](/igem/gif/QR-FA-a.gif)|![](/igem/gif/QR-FA-b.gif)
+without QS|![](/igem/gif/QR-noQR-a.gif)|![](/igem/gif/QR-noQR-b.gif) 
+with QS|![](/igem/gif/QR-enableQR-a.gif)|![](/igem/gif/QR-enableQR-b.gif)
+
+##3D Modeling##
+
+Title | Whole View | Zoom     |
+:------:|:------------:|:----------:|
+without QR|![](/igem/gif/3D-noQR-a.gif)|![](/igem/gif/3D-noQR-b.gif)
+with QR|![](/igem/gif/3D-QR-a.gif)|![](/igem/gif/3D-QR-b.gif)
+
+##System Analysis##
