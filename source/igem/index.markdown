@@ -23,3 +23,8 @@ without QR|![](/igem/gif/3D-noQR-a.gif)|![](/igem/gif/3D-noQR-b.gif)
 with QR|![](/igem/gif/3D-QR-a.gif)|![](/igem/gif/3D-QR-b.gif)
 
 ##System Analysis##
+
+Input & Parameter Sweep | Parameter Sweep |
+:------------:|:----------:|
+![](/igem/gif/SA-1-a.png)|![](/igem/gif/SA-1-b.png)
+![](/igem/gif/SA-2-a.png)|![](/igem/gif/SA-2-b.png)
