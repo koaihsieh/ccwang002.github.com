@@ -8,9 +8,10 @@ footer: true
 ---
 Here is Liang Bo Wang's work summary.
 
-* 09/14 [ [pptx][0914-1], [Workflow][0914-2], [FastQC report (before trim)][0914-3], [FastQC example (after trim)][0914-4] ]
 
+* Currently I am writing on my summer lab report, for the report progress please refer to [here][summer-report], which is a Git repo.
 * 09/19 [ [pptx][0919-1], [Workflow][0919-2] ]
+* 09/14 [ [pptx][0914-1], [Workflow][0914-2], [FastQC report (before trim)][0914-3], [FastQC example (after trim)][0914-4] ]
 
 [0914-1]: /lab/data/0914/0914.pptx 
 [0914-2]: /lab/data/0914/workflow-0914.pdf
@@ -19,7 +20,7 @@ Here is Liang Bo Wang's work summary.
 
 [0919-1]: /lab/data/0919/0919.pptx 
 [0919-2]: /lab/data/0919/workflow-0919.pdf
-
+[summer-report]: https://github.com/ccwang002/Report-for-2012-CGM-Summer-Research
 
 
 
