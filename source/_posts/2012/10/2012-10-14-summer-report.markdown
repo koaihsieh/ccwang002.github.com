@@ -11,9 +11,11 @@ categories:
 
 ### Main goal
 * find novel miRNAs using mirDeep2
+ <!-- more -->
 ### mirDeep2
 * tool for identifying novel miRNAs. 
 * 
+
 ### Galaxy
 * Introduction
     * a data-integration and analysis framework for bioinformation research.
