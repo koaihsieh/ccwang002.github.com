@@ -12,5 +12,31 @@ categories:
 
 ## Dicer Splicing ##
 * for miRNA is primarily Dcr-1
+* 2 nts dsRNA overhang
+
+## *in silico* verification
+* new dataset we use [GSE29173], containing 185 unique samples.
+* Original [paper] link:   
+MicroRNA sequence and expression analysis in breast tumors by deep sequencing.
+
+[paper]: http://www.ncbi.nlm.nih.gov/pubmed/21586611
+[GSE29173]: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE29173
+
+### FastX-Toolkit
+* install instruction:   
+<http://hannonlab.cshl.edu/fastx_toolkit/install_ubuntu.txt>
+
+* download [site](http://hannonlab.cshl.edu/fastx_toolkit/download.html)
 
 
+### Blastn mapping
+
+* instruction:  
+<http://www.ncbi.nlm.nih.gov/books/NBK52640/>
+
+```
+    $ makeblastdb -dbtype nucl -in SRR191397_clipped.fa  -input_type fasta
+    $ blastn -query quest.txt -db SRR191397_clipped.fa -task blastn-short -html -out blastn_result.html
+```
+    
+* chr11_13709 map to no gene and is *in silica verified*
