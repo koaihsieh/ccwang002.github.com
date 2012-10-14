@@ -237,6 +237,10 @@ end
 # Deploying  #
 ##############
 
+desc "Syntax for git push && rake deploy"
+task :upload => [:gen_deploy] do
+  system("git push")
+end
 desc "Default deploy task"
 task :deploy do
   # Check if preview posts exist, which should not be published
