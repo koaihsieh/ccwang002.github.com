@@ -28,6 +28,42 @@ MicroRNA sequence and expression analysis in breast tumors by deep sequencing.
 
 * download [site](http://hannonlab.cshl.edu/fastx_toolkit/download.html)
 
+### Valid novel miRNA candidates:
+Valid:
+* chr7_8791
+* chr17_17828
+* chr20_19494
+* chr20_19450 (no intron is mapped)
+* chr18_18769 (no intron is mapped)
+* chr11_13709 (no intron is mapped)
+* chr2_2356
+* chr1_692
+* chr6_7548
+* chr1_944
+* chr6_8151
+* chr11_13239	
+* chr2_3487 (no intron is mapped)
+* chr6_8250
+* chr19_19992	
+* chr1_689 ( no intro is mapped)
+* chr17_17785	
+* 
+
+In-valid:
+* chr5_6067 (mir-582)
+* chr4_5692 (map to exon)
+* chr3_4533 (strange, does not pass Rnafold)
+* chr11_12760 (map to mRNA)
+* chr3_3910 (map to mRNA)
+* chr10_12452 (ma to mRNA)
+* chr1_1448 (map to Novel nucleic acids)
+* chr7_8991 (map to mRNA **interesting result**)
+* chr7_8849 (map to mRNA)
+* chr22_20809 (map to mRNA)
+* chr7_8673 (map to mRNA) 
+* chr14_15459	(map to mRNA)
+* chr20_19463 (map to mRNA)
+* chr2_3091 (map to snoRNA)
 
 ### Blastn mapping
 
@@ -35,8 +71,8 @@ MicroRNA sequence and expression analysis in breast tumors by deep sequencing.
 <http://www.ncbi.nlm.nih.gov/books/NBK52640/>
 
 ```
+    $ nohup fastx_clipper -a TCGTATGCCGTCTTCTGCTTG -l 18 -i SRR191397.fasta -o SRR191397_clipped.fa -v &> clip.log &
     $ makeblastdb -dbtype nucl -in SRR191397_clipped.fa  -input_type fasta
     $ blastn -query quest.txt -db SRR191397_clipped.fa -task blastn-short -html -out blastn_result.html
+    -strand plus -evalue 35  -num_threads 3
 ```
-    
-* chr11_13709 map to no gene and is *in silica verified*

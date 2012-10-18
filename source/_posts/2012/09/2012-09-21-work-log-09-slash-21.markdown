@@ -103,4 +103,4 @@ Chro | Strand | Score | UCSC Link  | Mapped on <BR> Gene Intron | Description |
   
 [CASC3]: http://genome.ucsc.edu/cgi-bin/hgGene?hgg_gene=uc010cwt.1&hgg_prot=O15234&hgg_chrom=chr17&hgg_start=38296506&hgg_end=38327133&hgg_type=knownGene&db=hg19&hgsid=298639511
 
-[chr-17]: http://genome.ucsc.edu/cgi-bin/hgTracks?position=chr17:38318191-38318255&db=hg19&ss=../trash/hgSs/hgSs_genome_5b11_b731f0.pslx+../trash/hgSs/hgSs_genome_5b11_b731f0.fa&hgsid=298639511
+[chr-17]: http://genome.ucsc.edu/cgi-bin/hgTracks?position=chr17:38318191-38318255&db=hg19&ss=../trash/hgSs/hgSs_genome_5b11_b731f0.pslx+../trash/hgSs/hgSs_genome_5b11_b731f0.fa&hgsid=298639511w

@@ -11,7 +11,8 @@ categories:
 
 ### Main goal
 * find novel miRNAs using mirDeep2
- <!-- more -->
+<!-- more -->
+ 
 ### mirDeep2
 * tool for identifying novel miRNAs. 
 * 
