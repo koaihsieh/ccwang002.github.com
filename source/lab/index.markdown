@@ -9,7 +9,8 @@ footer: true
 Here is Liang Bo Wang's work summary.
 
 
-* Currently I am writing on my summer lab report, for the report progress please refer to [here][summer-report], which is a Git repo.
+* Summer Report [slides & report][summer-report], which is a dir.
+* 10/15 [ [[Validation by blastn][1015-1], [processed dataset][1015-2]]
 * 09/19 [ [pptx][0919-1], [Workflow][0919-2] ]
 * 09/14 [ [pptx][0914-1], [Workflow][0914-2], [FastQC report (before trim)][0914-3], [FastQC example (after trim)][0914-4] ]
 
@@ -20,8 +21,9 @@ Here is Liang Bo Wang's work summary.
 
 [0919-1]: /lab/data/0919/0919.pptx 
 [0919-2]: /lab/data/0919/workflow-0919.pdf
-[summer-report]: https://github.com/ccwang002/Report-for-2012-CGM-Summer-Research
-
+[1015-1]: http://liang.ntuphoto.tw/lab-data/1015-result/unassign/blastn_result2.html
+[1015-2]: http://liang.ntuphoto.tw/lab-data/1015-result/
+[summer-report]: http://liang.ntuphoto.tw/lab-data/Report/
 
 
 
