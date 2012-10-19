@@ -21,6 +21,7 @@ MicroRNA sequence and expression analysis in breast tumors by deep sequencing.
 
 [paper]: http://www.ncbi.nlm.nih.gov/pubmed/21586611
 [GSE29173]: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE29173
+<!-- more -->
 
 ### FastX-Toolkit
 * install instruction:   
@@ -29,7 +30,9 @@ MicroRNA sequence and expression analysis in breast tumors by deep sequencing.
 * download [site](http://hannonlab.cshl.edu/fastx_toolkit/download.html)
 
 ### Valid novel miRNA candidates:
+
 Valid:
+
 * chr7_8791
 * chr17_17828
 * chr20_19494
@@ -47,9 +50,9 @@ Valid:
 * chr19_19992	
 * chr1_689 ( no intro is mapped)
 * chr17_17785	
-* 
 
 In-valid:
+
 * chr5_6067 (mir-582)
 * chr4_5692 (map to exon)
 * chr3_4533 (strange, does not pass Rnafold)
