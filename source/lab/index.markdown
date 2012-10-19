@@ -5,12 +5,12 @@ date: 2012-09-16 16:09
 comments: false
 sharing: false
 footer: true
+
 ---
 Here is Liang Bo Wang's work summary.
 
-
 * Summer Report [slides & report][summer-report], which is a dir.
-* 10/15 [ [[Validation by blastn][1015-1], [processed dataset][1015-2]]
+* 10/15 [ [Validation by blastn][1015-1], [Processed dataset][1015-2] ]
 * 09/19 [ [pptx][0919-1], [Workflow][0919-2] ]
 * 09/14 [ [pptx][0914-1], [Workflow][0914-2], [FastQC report (before trim)][0914-3], [FastQC example (after trim)][0914-4] ]
 
@@ -26,10 +26,13 @@ Here is Liang Bo Wang's work summary.
 [summer-report]: http://liang.ntuphoto.tw/lab-data/Report/
 
 
-
 ##miRNA
+* [Preparation](/lab/miRNA) **Deprecated!!**  
+  For newest information please refer to the work log.
+* [Adaptors][adaptors] used in NGS, mainly for Illumina platform.
 
-* [Preparation](/lab/miRNA)
+[adaptors]: /lab/data/Illumina_Adapters.txt
+
 
 ##Useful Links##
 * Galaxy setup: [here](Galaxy_Setup.html)
@@ -38,16 +41,15 @@ Here is Liang Bo Wang's work summary.
 * CentOS process control by vBird: [here](http://linux.vbird.org/linux_basic/0440processcontrol.php)
 
 <a name='#initial'></a>
-
 ##Initialization & Setup##
 Using the following tools:
 
+* [octopress](http://octopress.org/)  
+  framework for this site.
+  
 * [gh-pages](http://pages.github.com/)  
-  where this log page is hosted.
-    
-* [reveal.js](http://lab.hakim.se/reveal-js/) *NEW TOOL WILL BE INTRODUCED*   
-  the slide tool, including the code highlight
-    
+  where this site is hosted.
+        
 * [Key.CSS](http://michaelhue.com/keyscss/)  
   show the key in a beautiful way
     
@@ -55,8 +57,10 @@ Using the following tools:
     * [語法介紹 (中文)](http://markdown.tw/)  
     * Free editor on Mac: [Mou](http://mouapp.com/), Win: [MarkdownPad](http://markdownpad.com/)
 
-<a name='git'></a>
-    
-* Git - Version control  
-    Please refer to [here](git.html)
+
+* Git - Version control <a name='git'></a>  
+  Please refer to [note] page or [git] directly.
+  
+[git]: /note/git
+[note]: /note
 
