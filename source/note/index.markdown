@@ -12,5 +12,12 @@ footer: true
 
 [git]:/note/git
 
+## Environment Setup
+
+* [Mac][macenv]
+* Win
+
+[macenv]: /note/macenv
+
 
 

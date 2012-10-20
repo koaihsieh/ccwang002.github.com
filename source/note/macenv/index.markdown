@@ -12,8 +12,8 @@ footer: true
 ### Xcode 4.5.1
 * Download Xcode from [developer's site][xcode] or directly from Mac App Store.
 * After install Xcode, an additional **Command Line Tool** package of developer tools is required.  
-![](pic/xcode_clt.png)
-![](pic/xcode_dev.png)
+![](/note/pic/xcode_clt.png)
+![](/note/pic/xcode_dev.png)
 [xcode]: https://developer.apple.com/xcode/
 * To test installation, open the Terminal and type
 {%codeblock lang:bash%}
