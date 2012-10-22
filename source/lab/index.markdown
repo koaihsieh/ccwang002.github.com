@@ -29,15 +29,15 @@ Here is Liang Bo Wang's work summary.
 ##miRNA
 * [Preparation](/lab/miRNA) **Deprecated!!**  
   For newest information please refer to the work log.
-* [Adaptors][adaptors] used in NGS, mainly for Illumina platform.
+* Collection of [adaptors] of NGS.
 
 [adaptors]: /lab/data/Illumina_Adapters.txt
 
 
 ##Useful Links##
-* Galaxy setup: [here](Galaxy_Setup.html)
+* Galaxy setup: [here](/lab/galaxy/)
 * Work Log of the whole dry lab team: [here](https://docs.google.com/spreadsheet/ccc?key=0Aq56AmAMeOpPdHFLbjlQUTltZWlETVB2TnA4a1VrOWc&hl=en#gid=59)
-* Useful CentOS command: [here](CentOSUsefulCmd.html)
+* Useful CentOS command: [here](/lab/CentOSCmd/)
 * CentOS process control by vBird: [here](http://linux.vbird.org/linux_basic/0440processcontrol.php)
 
 <a name='#initial'></a>

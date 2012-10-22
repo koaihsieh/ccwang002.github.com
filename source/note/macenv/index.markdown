@@ -40,3 +40,10 @@ Your system is raring to brew.
 
 [homebrew]: http://mxcl.github.com/homebrew/
 
+### Text Editor
+
+* Sublime Text 2: [homepage][sublime2]
+* MacVim: [macvim]
+
+[sublime2]: http://www.sublimetext.com/
+[macvim]: http://code.google.com/p/macvim/
