@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Work Log - 10/25"
+date: 2012-10-25 00:34
+comments: true
+categories:
+    -lab log 
+---
+
+## Re-verify Novel Candidates ##
+
+### 把原本誤以為 map 到 exon 的 candidates 放回來
+* chr11_13342* chr22_20736* chr13_14817
+* chr4_5692
+* chr11_12760
+* chr3_3910
+* chr10_12452 
+* chr7_8991
+* chr7_8849 
+* chr22_20809
+* chr7_8673
+* chr14_15459
+* chr20_19463
+
