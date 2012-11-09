@@ -4,7 +4,7 @@ title: "Work Log - 10/25"
 date: 2012-10-25 00:34
 comments: true
 categories:
-    -lab log 
+- lab log 
 ---
 
 ## Re-verify Novel Candidates ##
