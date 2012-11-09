@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Combining Catalysis and Self-Assembly: Towards Evolvable Soft Matter"
+date: 2012-10-30 10:46
+comments: true
+categories: 
+    - avs
+---
+
+## Enzyme Responsive Material
+* Biomater Sci, 2013
+
+## Evolvable/Adaptive Matter
+* Building blocks
+* recombine info rich seq(ex peptide)
+* seq express diff functions
+* selections
+* responsive to environments
+
+## Amino acid - coolest lego bricks in bio
+* self assembly
+* molecular recognition 
+* catalysis
+* minimal synthetic biology
+
+## Minimalistic peptide self-assembly
+* by control sequence of the peptide, different shapes will be self-formed.
+* enviro-reponsiveness different salt affect the supermolcular structure
+* self-favoured free energy choice to sequence selection

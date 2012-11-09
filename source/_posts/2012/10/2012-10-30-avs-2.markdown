@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Surface Characterization Meets Cells and Proteins"
+date: 2012-10-30 11:20
+comments: true
+categories: 
+    - avs
+---
+
+## Medical Advices and Surface Science
+
+## Biological Surface Science
+* Valves
+* Binding events and catalytic sites
+    
+## history in using UHV for proteins/cells
