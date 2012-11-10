@@ -44,6 +44,7 @@ Your system is raring to brew.
 
 * If any error or warning comes up, simply follow the given instructions.
 * Google/Stack Overflow contains numerous solutions and Q&A for homebrew installation and usage.
+
 [homebrew]: http://mxcl.github.com/homebrew/
 
 ### Text Editor
