@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Work Log - 11/13"
+date: 2012-11-13 05:51
+comments: true
+categories: 
+ - lab log
+---
+
+## Goal
+* 選擇不同的cancer type，做mapping的驗証
+
+<!-- more -->
+## Previous Mapping Commands
+{% codeblock lang:bash%}
+# Clip 3' adpater
+$ fastx_clipper -a TCGTATGCCGTCTTCTGCTTG -l 18 -i SRR191397.fasta \
+  -o SRR191397_clipped.fa -v &> clip.log &
+# Create blast database
+$ makeblastdb -dbtype nucl -in SRR191397_clipped.fa  -input_type fasta
+# Use blastn to map the candidates
+$ blastn -query novel_cadidate_2.txt -db pooled_clipped_collapsed.fa -task blastn-short \
+  -html -out blastn_result_1026.html -strand plus -evalue 0.05  \ 
+  -num_threads 3 -num_alignments=0 -num_descriptions=50000
+{% endcodeblock %}
+
+## Search the qualified datasets
+
+現在先找了兩個 Dataset: [GSE33858], [GSE37710]
+
+Dataset     | Cancer Type        | Sample Size
+----------- | -------------      | ------------
+[GSE33858]  | Lung Cancer        | 32 patients, including 21 adenocarcinoma patients (20 pairs of T+NT and 1 non-pair T) and 11 squamous cell carcinoma patients (10 pairs of T+NT and 1 non-pair T).
+[GSE37710]  | Pancreatic Cancer  | 352 participants, sample size unknown.
+
+
+[GSE33858]: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE33858
+[GSE37710]:http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE37710
