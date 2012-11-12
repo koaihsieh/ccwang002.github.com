@@ -9,6 +9,16 @@ footer: true
 
 ## Softwares Preparation
 
+* Xcode
+* Homebrew: Package Management
+* Text editor: Sublime, Vim and etc.
+* Perlbrew(*exp*): Perl version management
+* iTerm2: more powerful terminal
+* Filezilla: (S)FTP file transfer
+
+
+## Installation Instruction
+
 ### Xcode 4.5.1
 * Download Xcode from [developer's site][xcode] or directly from Mac App Store.
 * After install Xcode, an additional **Command Line Tool** package of developer tools is required.  
