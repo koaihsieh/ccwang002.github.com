@@ -42,7 +42,7 @@ Dataset     | Cancer Type        | Sample Size
 
 ### Bowtie
 
-{%codeblock%}
+{%codeblock lang:bash%}
 Fastx-Toolkit Installation:
 
  //
@@ -67,7 +67,7 @@ Fastx-Toolkit Installation:
  $ ./configure
  $ make
  $ sudo make install
- 
+ {%endcodeblock%}
 
 ## Misc.
 
