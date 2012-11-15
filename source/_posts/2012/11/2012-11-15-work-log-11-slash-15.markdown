@@ -53,3 +53,165 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 export PATH=/home/liang/data/miRNA/tool/sratoolkit.2.1.16-centos_linux64/bin:$PATH
 {%endcodeblock%}
 
+### Bash loop
+Good Tutorial [here](http://www.cyberciti.biz/faq/bash-for-loop/)
+
+
+## Work
+
+### Previous script file
+
+{%codeblock lang:bash%}
+#!/bin/bash
+makeblastdb -dbtype nucl -in pooled_clipped_collapsed.fa  -input_type fasta
+blastn -query candidates.txt -db pooled_clipped_collapsed.fa -task blastn-short -html -out blastn_result.html -strand plus -evalue 0.05  -num_threads 3
+#!/bin/bash
+
+filepre=(151 152 153 154 155 156 157 158 159 160 161 162 163 164 167 168 214 215 235 313 531)
+
+for pre in ${filepre[@]}; do
+    fastx_clipper -a TCGTATGCCGTCTTCTGCTTG -l 18 -i ${pre}_unassigned_fastq.txt  -o ${pre}_unassigned_clipped.fq -v > ${pre}_clip.log
+    fastx_quality_stats -i ${pre}_unassigned_clipped.fq -o ${pre}_stats.txt
+    fastq_quality_boxplot_graph.sh -i ${pre}_stats.txt -o ${pre}_quality.png -t "GSE29173-${pre}_unassigned"
+    cat ${pre}_unassigned_clipped.fq >> pooled_clipped.fq
+done
+fastx_collapser -i pooled_clipped.fq -o pooled_clipped_collapsed.fa -v >> pool_clip.log
+
+makeblastdb -dbtype nucl -in pooled_clipped_collapsed.fa  -input_type fasta
+blastn -query candidates.txt -db pooled_clipped_collapsed.fa -task blastn-short -html -out blastn_result.html -strand plus -evalue 0.05  -num_threads 3
+{%endcodeblock%}
+
+### Dump to fasta
+
+{%codeblock lang:bash%}
+#!/bin/bash
+mkdir ../fasta
+for i in $( ls *.sra); do
+    echo "Currently processing item:" $i
+    fastq-dump --fasta -O ../fasta $i
+done
+{%endcodeblock%}
+
+
+### Clip, Collapse and Make blast database
+
+{%codeblock lang:bash%}
+#!/bin/bash
+fnt(){
+    declare -a processFiles=("${!1}")
+    local pooledfilename="${2}_clipped_pooled"
+    echo "Clear file: ${pooledfilename}.fa"
+    echo "" > ${pooledfilename}.fa
+
+    echo '====== Pooling ======'
+    for i in "${processFiles[@]}"
+    do
+        echo "Currently processing file: SRR3726$i.fasta"
+        fastx_clipper -a TCGTATGCCGTCTTCTGCTTG -l 18 -i SRR3726$i.fasta >> ${pooledfilename}.fa
+    done
+
+    echo '====== Collapsing ======'
+    fastx_collapser -v -i ${pooledfilename}.fa -o ${pooledfilename}_collapsed.fa
+
+    echo '====== Make Blast Database======'
+    makeblastdb -dbtype nucl -in ${pooledfilename}_collapsed.fa -input_type fasta
+}
+
+main(){
+    local Tumorfiles=(11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 58 59 61 63 65 67 69 71)
+    local Normalfiles=(12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 57 60 62 64 66 68 70 72)
+    fnt Tumorfiles[@] "Tumor"
+    fnt Normalfiles[@] "Normal"
+}
+main
+{%endcodeblock%}
+
+### Convert filename from GEO to SRR
+
+{%codeblock lang:python%}
+import re
+
+allsamples='''GSM838063	159T
+GSM838064	159NT
+GSM838065	304T
+GSM838066	304NT
+GSM838067	325T
+GSM838068	325NT
+GSM838069	541T
+GSM838070	541NT
+GSM838071	552T
+GSM838072	552NT
+GSM838073	561T
+GSM838074	561NT
+GSM838075	566T
+GSM838076	566NT
+GSM838077	581T
+GSM838078	581NT
+GSM838079	596T
+GSM838080	596NT
+GSM838081	507T
+GSM838082	507NT
+GSM838083	534T
+GSM838084	534NT
+GSM838085	538T
+GSM838086	538NT
+GSM838087	539T
+GSM838088	539NT
+GSM838089	543T
+GSM838090	543NT
+GSM838091	558T
+GSM838092	558NT
+GSM838093	560T
+GSM838094	560NT
+GSM838095	603T
+GSM838096	603NT
+GSM838097	606T
+GSM838098	606NT
+GSM838099	607T
+GSM838100	607NT
+GSM838101	610T
+GSM838102	610NT
+GSM838103	619T
+GSM838104	619NT
+GSM838105	542T
+GSM838106	542NT
+GSM838107	551T
+GSM838108	551NT
+GSM838109	604NT
+GSM838110	611T
+GSM838111	618T
+GSM838112	618NT
+GSM838113	642T
+GSM838114	642NT
+GSM838115	653T
+GSM838116	653NT
+GSM838117	670T
+GSM838118	670NT
+GSM838119	675T
+GSM838120	675NT
+GSM838121	688T
+GSM838122	688NT
+GSM838123	692T
+GSM838124	692NT
+'''
+
+allsamples = allsamples.splitlines()
+index = 11
+tumorList = []
+normalList = []
+for entry in allsamples:		
+	s = re.search('GSM\d{3}(\d{3})\t(\d{3})(\w{1,2})', entry)
+	if s.group(3) == 'T':
+		print (s.group(1) + ' is ' + 'tumor of patient ' + s.group(2))
+		tumorList.append(index)
+	elif s.group(3) == 'NT':
+		print (s.group(1) + ' is ' + 'normal of patint ' + s.group(2) )
+		normalList.append(index)
+	else:
+		print (s.group(0) + 'fail to match.')
+
+	index = index + 1
+
+print(tumorList)
+print(normalList)
+{%endcodeblock%}
