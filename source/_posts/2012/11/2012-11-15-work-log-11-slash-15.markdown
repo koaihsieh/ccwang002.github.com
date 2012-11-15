@@ -33,5 +33,23 @@ $ sudo make install
 # Test
 $ which python3
 /usr/local/bin/python3
-
 {%endcodeblock%}
+
+
+### Environment Variable Setup
+Put it into `~/.bash_profile`
+{%codeblock lang:bash%}
+# path for Python 2.7 locally
+export PATH="$HOME/local/bin:$PATH"
+export PATH="$HOME/local/Python-2.7/bin:$PATH"
+
+# Path for bowtie
+export PATH="/home/liang/data/miRNA/tool/bowtie-0.12.8:$PATH"
+# Path for blast
+export PATH="/home/liang/data/miRNA/tool/ncbi-blast-2.2.27+/bin:$PATH"
+# Path for fastx-toolkit
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
+# Path for NCBI SRA Toolkit
+export PATH=/home/liang/data/miRNA/tool/sratoolkit.2.1.16-centos_linux64/bin:$PATH
+{%endcodeblock%}
+
