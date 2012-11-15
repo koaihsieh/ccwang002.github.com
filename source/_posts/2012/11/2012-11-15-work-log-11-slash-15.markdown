@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Work Log - 11/15"
+date: 2012-11-15 10:27
+comments: true
+categories: 
+ - lab log
+---
+
+## Goal
+* 驗証之前找到的miRNA，使用lung cancer的dataset。 [GSE33858]
+<!-- more -->
+
+[GSE33858]: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE33858
+
+## Setup
+
+### Python 3.2.3 Installation
+Compile from source locally at `/usr/local/bin`
+{%codeblock lang:bash%}
+$ axel -a -n 10 -v http://www.python.org/ftp/python/3.2.3/Python-3.2.3.tar.bz2
+$ tar jxvf Python-3.2.3.tar.bz2
+$ cd Python-3.2.3
+
+# by setting --prefix=/opt/python3, then it can be installed 
+# at other directory.
+$ ./configure
+$ make 
+# if install at home dir, then $ make install 
+# should be used.
+$ sudo make install
+
+# Test
+$ which python3
+/usr/local/bin/python3
+
+{%endcodeblock%}
