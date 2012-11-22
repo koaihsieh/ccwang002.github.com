@@ -18,11 +18,9 @@ categories:
 
 ## Software Study
 
-
-
 ### lftp
 Tutorial: <http://hi.baidu.com/wmxs1988/item/ea6c6412f9eaa926f6625c8a>  
 同樣使用 [GSE33858] 來操作。
 {% codeblock Usage lang:bash%}
-
+$ fadf
 {% endcodeblock %}
