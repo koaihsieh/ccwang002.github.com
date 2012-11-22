@@ -16,7 +16,7 @@ Except otherwise noted, this slide is © 2012 Liang Bo Wang, under a Creative Co
 ## 常見Q&A
 <!-- more -->
 
-1. 想要拍出好照片，一定要用單眼嗎？
+1. 想要拍出好照片，一定要用單眼嗎？  
    比起器材，腦袋更重要！  
    好照片的分類：  
     * 單純畫面漂亮，顏色勻稱，光線漂亮。Ex 風景照、商業攝影（棚拍）  
@@ -156,7 +156,7 @@ Except otherwise noted, this slide is © 2012 Liang Bo Wang, under a Creative Co
 
 * 人眼視覺運作方式。 => 試著在照片中營造眼睛觀看的路線
 * 照片看起來相對安定？怎麼做？
-
+ 
 ### 構圖法則 - 三分、井字構圖法
 
 ### 構圖法則 - 倒三角

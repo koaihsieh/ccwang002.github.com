@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Work Log - 11/20"
+date: 2012-11-20 13:31
+comments: true
+categories: 
+ - lab log
+---
+
+## Goal
+* 做完上次的操作，試著用比較少的硬碟資源來完成
+* 多用 script 處理
+* 試著引入 NGS QC Toolkit
+
+<!-- more -->
+
+[GSE33858]: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE33858
+
+## Software Study
+
+
+
+### lftp
+Tutorial: <http://hi.baidu.com/wmxs1988/item/ea6c6412f9eaa926f6625c8a>  
+同樣使用 [GSE33858] 來操作。
+{% codeblock Usage lang:bash%}
+
+{% endcodeblock %}

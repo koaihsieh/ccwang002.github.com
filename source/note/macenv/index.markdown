@@ -76,22 +76,20 @@ Your system is raring to brew.
 * Install multiple version of perl, similar to rbenv.
 
 {%codeblock lang:bash%}
-# Change the perlbrew directory same as the homebrew
-$ export PERLBREW_ROOT=/usr/local/Cellar/perl5
-$ curl -kL http://install.perlbrew.pl | bash
+# DO NOT Change the perlbrew directory same as the homebrew. Some issue may occur.
+$ curl -L http://xrl.us/perlbrewinstall | bash
 {%endcodeblock%}
 
 * One should modify ones bash profile such as `~/.bash_profile` by adding 
 {%codeblock lang:bash%}
 # perlbrew
-export PERLBREW_ROOT=/usr/local/Cellar/perl5
-. /usr/local/Cellar/perl5/etc/bashrc
+. ${PERLBREW_ROOT}/etc/bashrc
 {%endcodeblock%}
 
 * To install the latest stable release
 {%codeblock lang:bash%}
-$ perlbrew install perl-5.16.0
-$ perlbrew switch perl-5.16.0
+$ perlbrew install perl-5.16.2
+$ perlbrew switch perl-5.16.2
 {%endcodeblock%}
 
 [perlbrew]: http://perlbrew.pl/

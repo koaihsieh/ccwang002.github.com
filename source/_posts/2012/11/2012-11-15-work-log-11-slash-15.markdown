@@ -126,6 +126,18 @@ main(){
 main
 {%endcodeblock%}
 
+### Remove first line of file
+
+    $ sed -i -e '1d' test.txt
+
+### Compress fasta file
+
+{%codeblock lang:bash%}
+$ 7za a SRR372611.fasta SRR372613.fasta SRR372615.fasta SRR372617.fasta SRR372619.fasta SRR372621.fasta SRR372623.fasta SRR372625.fasta SRR372627.fasta SRR372629.fasta SRR372631.fasta SRR372633.fasta SRR372635.fasta SRR372637.fasta SRR372639.fasta SRR372641.fasta SRR372643.fasta SRR372645.fasta SRR372647.fasta SRR372649.fasta SRR372651.fasta SRR372653.fasta SRR372655.fasta SRR372658.fasta SRR372659.fasta SRR372661.fasta SRR372663.fasta SRR372665.fasta SRR372667.fasta SRR372669.fasta SRR372671.fasta
+
+$ rm -f SRR372611.fasta SRR372613.fasta SRR372615.fasta SRR372617.fasta SRR372619.fasta SRR372621.fasta SRR372623.fasta SRR372625.fasta SRR372627.fasta SRR372629.fasta SRR372631.fasta SRR372633.fasta SRR372635.fasta SRR372637.fasta SRR372639.fasta SRR372641.fasta SRR372643.fasta SRR372645.fasta SRR372647.fasta SRR372649.fasta SRR372651.fasta SRR372653.fasta SRR372655.fasta SRR372658.fasta SRR372659.fasta SRR372661.fasta SRR372663.fasta SRR372665.fasta SRR372667.fasta SRR372669.fasta SRR372671.fasta
+{%endcodeblock%}
+
 ### Convert filename from GEO to SRR
 
 {%codeblock lang:python%}
@@ -205,7 +217,7 @@ for entry in allsamples:
 		print (s.group(1) + ' is ' + 'tumor of patient ' + s.group(2))
 		tumorList.append(index)
 	elif s.group(3) == 'NT':
-		print (s.group(1) + ' is ' + 'normal of patint ' + s.group(2) )
+		print (s.group(1) + ' is ' + 'normal of patient ' + s.group(2) )
 		normalList.append(index)
 	else:
 		print (s.group(0) + 'fail to match.')
