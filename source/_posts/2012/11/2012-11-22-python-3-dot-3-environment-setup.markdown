@@ -10,6 +10,8 @@ categories:
 
 ## Python 3.3 & 3.2.3 installation
 
+Reference: <http://stackoverflow.com/questions/398768>
+
 ### [Way 1] 如果是自動 brew upgrade 升級就是這種
 
 {% codeblock lang:bash%}

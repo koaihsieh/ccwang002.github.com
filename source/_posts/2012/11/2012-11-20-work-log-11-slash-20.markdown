@@ -12,6 +12,8 @@ categories:
 * 多用 script 處理
 * 試著引入 NGS QC Toolkit
 
+## Slides
+<script async class="speakerdeck-embed" data-id="dfa4d52017390130c10622000a9d06d3" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 <!-- more -->
 
 [GSE33858]: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE33858
