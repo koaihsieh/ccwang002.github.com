@@ -180,6 +180,13 @@ task :opendir do
   end
 end
 
+desc "Open lab page"
+task :openlab do
+  labpage_dir = "#{source_dir}/lab/index.markdown"
+  puts "Opening lab page: #{labpage_dir}"
+  system("open #{labpage_dir}")
+end
+
 # usage rake isolate[my-post]
 desc "Move all other posts than the one currently being worked on to a temporary stash location (stash) so regenerating the site happens much quicker."
 task :isolate, :filename do |t, args|
