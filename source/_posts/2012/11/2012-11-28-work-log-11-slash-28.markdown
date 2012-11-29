@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Work Log - 11/28"
+date: 2012-11-28 21:59
+comments: true
+categories: 
+ - lab log
+---
+
+## Outlines
+* blast learning
+* CSV, subprocess learning
+
+## Slides
+
+<script async class="speakerdeck-embed" data-id="bdd28bd01c8e0130bc1e12313d140aaa" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+## BLAST
+Command line usage manual. <http://www.ncbi.nlm.nih.gov/books/NBK1763>  
+
+## CSV
+
+```
+with open('47.csv') as f:
+...     for row in csv.DictReader(f, ['ID', 'E-Value', 'Coverage', 'length', 'mismatch', 'gap']):
+...             print(row[])
+  
+  
+  with open('47.csv') as f:
+...     reader = csv.reader(f)
+...     for row in reader:
+...             print(row)
+```

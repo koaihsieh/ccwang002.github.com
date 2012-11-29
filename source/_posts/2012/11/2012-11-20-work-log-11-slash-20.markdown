@@ -23,3 +23,11 @@ categories:
 ### lftp
 Tutorial: <http://hi.baidu.com/wmxs1988/item/ea6c6412f9eaa926f6625c8a>  
 同樣使用 [GSE33858] 來操作。
+
+{% codeblock lang:bash %}
+
+$ lftp ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP009%2FSRP009408
+lftp > set cmd:queue-parallel 10
+lftp > set cmd:parallel 10
+lftp > mget -c */*.sra
+{% endcodeblock %}

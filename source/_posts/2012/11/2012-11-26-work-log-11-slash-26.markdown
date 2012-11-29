@@ -16,7 +16,7 @@ categories:
 # packages for compiling 
 $ sudo yum groupinstall "Development Tools"
 # useful tools 
-$ sudo yum install git vim screen htop axel
+$ sudo yum install git vim screen htop axel bash-completion
 
 # install python 2.7.3 and 3.3.0
 $ axel -qn 10 http://www.python.org/ftp/python/2.7.3/Python-2.7.3.tgz http://www.python.org/ftp/python/3.3.0/Python-3.3.0.tgz
@@ -36,7 +36,8 @@ $ git clone https://github.com/ccwang002/dotfiles.git
 $ cd dotfiles
 # create symlinks for dot files ex .bash_profile and etc
 $ python3 setup.py
-
+# make git to sense global .gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 # install vim
 $ wget http://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2
 $ tar jxvf vim-7.3.tar.bz2
@@ -62,4 +63,14 @@ $ git config http.sslVerify false
 $ cat README.md
 $ git submodule update --init
 
+# git completion
+$ git clone git://git.kernel.org/pub/scm/git/git.git
+$ cd git
+$ git checkout v`git --version | awk '{print $3}'`
+$ cp contrib/completion/git-completion.bash ~/.git-completion.bash
+$ cd ~
+$ rm -rf /tmp/git
+$ echo -e "source ~/.git-completion.bash" >> .profile
 {% endcodeblock %}
+
+### NCBI

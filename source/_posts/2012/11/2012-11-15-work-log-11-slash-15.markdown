@@ -39,10 +39,6 @@ $ which python3
 ### Environment Variable Setup
 Put it into `~/.bash_profile`
 {%codeblock lang:bash%}
-# path for Python 2.7 locally
-export PATH="$HOME/local/bin:$PATH"
-export PATH="$HOME/local/Python-2.7/bin:$PATH"
-
 # Path for bowtie
 export PATH="/home/liang/data/miRNA/tool/bowtie-0.12.8:$PATH"
 # Path for blast
