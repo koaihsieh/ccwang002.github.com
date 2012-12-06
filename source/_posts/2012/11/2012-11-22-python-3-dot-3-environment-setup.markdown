@@ -55,23 +55,21 @@ $ python3.2 -V
 
 之後的設定，選用 python3 -> Python 3.3.0, python3.2 -> Python 3.2.3
 
-### Numpy
+### Numpy 1.7.0b2
 {% codeblock lang:bash%}
-$ export CC=clang
-$ export CXX=clang
-$ export FFLAGS=-ff2c
-$ git clone https://github.com/numpy/numpy.git
-$ cd numpy
+$ wget http://sourceforge.net/projects/numpy/files/NumPy/1.7.0b2/numpy-1.7.0b2.tar.gz
+$ tar zxvf numpy-1.7.0b2.tar.gz
+$ cd numpy-1.7.0b2
 $ python3 setup.py build
-$ python3 setup.py install 
+$ python3 setup.py install
+# testing
+$ cd
+$ py3 
+>>> import numpy as np
+>>> np.test()
 {% endcodeblock %}
 
+重點是要選對numpy的版本
 
-### Subprocess
-Tutorials:
- 
-* <http://blog.sina.com.cn/s/blog_64d75a250100i9tv.html>
-{% codeblock Usage lang:bash%}
-
-{% endcodeblock %}
-
+### Scipy
+Currently I cannot build it successfully using version either 0.11.0(stable) or the develop version(git)
