@@ -37,3 +37,14 @@ categories:
 <div class="video-container">
 <iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/W5EftJL5XpQ?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
+
+## 接下來要做的事情
+* 怎麼篩出最可能的 miRNA
+* 怎麼判斷在不同type間表現量的差異是明顯的？（定義？）
+* 同一個type的sample，overall的表現量計算方式（Now: Average）？
+* Barcoded的sample中expression rate會不會本來就稍微高一點，因為sample size較小？
+
+
+* 關於Galaxy，因為感覺這個東西沒有辦法跟lab其他人的成果合起來，給我們用其實也蠻多餘的，不太確定有沒有必要
+    * 如果要做的話，現在的這個要砍掉重練
+* 有沒有其他任務可以解
