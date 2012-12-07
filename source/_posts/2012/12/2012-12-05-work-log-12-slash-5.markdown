@@ -14,7 +14,11 @@ categories:
     * plot the bar chart
 * rerun the result of dataset verifyA
     * not to pool the result
-    
+
+## Slides
+
+<script async class="speakerdeck-embed" data-id="44b3f06020ef0130321a22000a9d04d3" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
 <!-- more -->
 ## Datatset [GSE29173]
 

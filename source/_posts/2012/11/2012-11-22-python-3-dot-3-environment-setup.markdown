@@ -62,7 +62,7 @@ $ tar zxvf numpy-1.7.0b2.tar.gz
 $ cd numpy-1.7.0b2
 $ python3 setup.py build
 $ python3 setup.py install
-# testing
+# testingNG
 $ cd
 $ py3 
 >>> import numpy as np
