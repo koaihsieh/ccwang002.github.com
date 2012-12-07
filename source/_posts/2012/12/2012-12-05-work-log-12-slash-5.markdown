@@ -44,6 +44,12 @@ categories:
 * 同一個type的sample，overall的表現量計算方式（Now: Average）？
 * Barcoded的sample中expression rate會不會本來就稍微高一點，因為sample size較小？
 
+* 獨立執行過，似乎跟我的code沒有關系
+    * ==> 試著自己產生一些test file來檢查（sample size的差別、instrument的差別）
+    * ==> 取代fastx clipper的軟體：cutadapt: <http://code.google.com/p/cutadapt/>
+    * ==> 
+* HWI-EASXXX:1_64:9_25_09:6:1:16:414 的個別意義
+* HWI, ILLUMINA差別？
 
 * 關於Galaxy，因為感覺這個東西沒有辦法跟lab其他人的成果合起來，給我們用其實也蠻多餘的，不太確定有沒有必要
     * 如果要做的話，現在的這個要砍掉重練
