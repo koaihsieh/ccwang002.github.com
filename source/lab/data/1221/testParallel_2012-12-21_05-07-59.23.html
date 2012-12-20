@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Output</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
+    
+    <style type="text/css">
+      /* Sticky footer styles
+      -------------------------------------------------- */
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+      table.log > tbody {
+        font-family: Inconsolata, Consolas, Monaco, monospace;
+        /*font-size: 16px;*/
+      }
+      /* Output description
+      -------------------------------------------------- */
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+      .container {
+        /*width: auto;*/
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+      
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <!-- Header -->
+      <div class="page-header">
+        <h1>Output Result</h1>
+      </div>
+      
+<dl class="dl-horizontal">
+<dt>Parallel task name</dt><dd>testParallel</dd>
+<dt>Contained task type</dt><dd>head (30), open log (1)</dd>
+<dt>Total task</dt><dd>31</dd>
+<dt>Total error</dt><dd>0</dd>
+<dt>Start time</dt><dd>2012-12-21 05:07:59.23</dd>
+<dt>End time</dt><dd>2012-12-21 05:07:59.49</dd>
+<dt>Running time</dt><dd>0.26s</dd></dl>
+<table class="table table-hover table-bordered log">
+  <thead>
+    <tr>
+      <th>type</th>
+      <th>name</th>
+      <th>normal msg</th>
+      <th>error msg</th>
+      <th>process time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>head</td>
+    <td>blast_new.py</td>
+    <td>#!/usr/local/bin/python3<br />import os<br />import sys<br />import glob<br />import platform<br />import subprocess<br />import re<br />import termcolor    # for esay coloring in bash<br />import datetime<br />from time import strftime, localtime, sleep    # for logging time</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>blastlogparser.py</td>
+    <td>import os<br />import os.path<br />import sys<br />import re<br />import termcolor    # for esay coloring in bash<br />import csv<br />from time import strftime<br />msgtype = { 'WARNING':   termcolor.colored('(Warning)', 'yellow'),<br />            'ERROR':     termcolor.colored('(Error)', 'red'),<br />            'NOTICE':    termcolor.colored('\n==>', 'cyan'),</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>blastpercand.py</td>
+    <td>#!/usr/local/bin/python3<br />import os<br />import sys<br />import glob<br />import platform<br />import subprocess<br />import re<br />import termcolor    # for esay coloring in bash<br />import datetime<br />from time import strftime, localtime, sleep    # for logging time</td>
+    <td></td>
+    <td>0.00s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>clip.py</td>
+    <td>#!/usr/local/bin/python3<br />import os<br />import sys<br />import glob<br />import platform<br />import multiprocessing as mp<br />import subprocess<br />import termcolor    # for esay coloring in bash<br />from time import strftime, localtime, sleep    # for logging time</td>
+    <td></td>
+    <td>0.00s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>clip_new.py</td>
+    <td>#!/usr/local/bin/python3<br />import os<br />import sys<br />import glob<br />import platform<br />import subprocess<br />import re<br />import termcolor    # for esay coloring in bash<br />import datetime<br />import csv</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>clipAndPool.sh</td>
+    <td>#!/bin/bash<br />fnt(){<br />    declare -a processFiles=("${!1}")<br />    local pooledfilename="${2}_clipped_pooled"<br />    echo "Clear file: ${pooledfilename}.fa"<br />    echo "" > ${pooledfilename}.fa<br /><br />    echo '====== Pooling ======'<br />    for i in "${processFiles[@]}"<br />    do</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>collapse.py</td>
+    <td>#!/usr/local/bin/python3<br />import os<br />import sys<br />import glob<br />import platform<br />import subprocess<br />import re<br />import termcolor    # for esay coloring in bash<br />import datetime<br />from time import strftime, localtime, sleep    # for logging time</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>EOW.py</td>
+    <td>import myparallel as mp<br />import os<br /><br />class EndOfWorld(mp.myparallel):<br />    <br />    def __init__(self, split_s, name, max_process=4):<br />        self.st = split_s        <br />        super(EndOfWorld, self).__init__(max_process=max_process, name=name)<br /><br />    def setupTaskPool(self, task_pool):</td>
+    <td></td>
+    <td>0.00s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>fastqdump.py</td>
+    <td>#!/usr/local/bin/python3<br />import os<br />import sys<br />import glob<br />import platform<br />import subprocess<br />import re<br />import termcolor    # for esay coloring in bash<br />import datetime<br />import csv</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>fastqdump_parser.py</td>
+    <td>import os<br />import os.path<br />import sys<br />import re<br />import termcolor    # for esay coloring in bash<br />import csv<br />from time import strftime<br />msgtype = { 'WARNING':   termcolor.colored('(Warning)', 'yellow'),<br />            'ERROR':     termcolor.colored('(Error)', 'red'),<br />            'NOTICE':    termcolor.colored('\n==>', 'cyan'),</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>ftpdownload.py</td>
+    <td>#!/usr/bin/env python3<br /><br />import ftplib<br />from urllib.parse import unquote, urlparse<br /><br />link = 'ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP009%2FSRP009408'<br />o = urlparse(link)<br /><br /># Connection information<br />server = o.netloc</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>logparser.py</td>
+    <td>import os<br />import os.path<br />import sys<br />import re<br />import termcolor    # for esay coloring in bash<br />import csv<br />from time import strftime<br />msgtype = { 'WARNING':   termcolor.colored('(Warning)', 'yellow'),<br />            'ERROR':     termcolor.colored('(Error)', 'red'),<br />            'NOTICE':    termcolor.colored('\n==>', 'cyan'),</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>makedb.py</td>
+    <td>#!/usr/local/bin/python3<br />import os<br />import sys<br />import glob<br />import platform<br />import subprocess<br />import re<br />import termcolor    # for esay coloring in bash<br />import datetime<br />from time import strftime, localtime, sleep    # for logging time</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>makedb_direct.py</td>
+    <td>#!/usr/local/bin/python3<br />import os<br />import sys<br />import glob<br />import platform<br />import subprocess<br />import re<br />import termcolor    # for esay coloring in bash<br />import datetime<br />from time import strftime, localtime, sleep    # for logging time</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>makedb_new.py</td>
+    <td>#!/usr/local/bin/python3<br />import os<br />import sys<br />import glob<br />import platform<br />import subprocess<br />import re<br />import termcolor    # for esay coloring in bash<br />import datetime<br />import csv</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>manageDataset.py</td>
+    <td>import re<br /><br />allsamples='''GSM838063	159T<br />GSM838064	159NT<br />GSM838065	304T<br />GSM838066	304NT<br />GSM838067	325T<br />GSM838068	325NT<br />GSM838069	541T<br />GSM838070	541NT</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>My_mom_says_2012-12-21_03-54-59.83.csv</td>
+    <td>type,name,normal msg,error msg,process time<br />speaking,1st word,"Today<br />",,0.01s<br />speaking,2nd word,"will<br />",,0.01s<br />speaking,3rd word,"not<br />",,0.00s<br />speaking,4th word,"be<br />",,0.00s<br />speaking,5th word,"the</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>My_mom_says_2012-12-21_03-56-34.79.csv</td>
+    <td>type,name,normal msg,error msg,process time<br />speaking,1st word,"Today<br />",,0.02s<br />speaking,2nd word,"will<br />",,0.02s<br />speaking,3rd word,"not<br />",,0.01s<br />speaking,4th word,"be<br />",,0.01s<br />speaking,5th word,"the</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>My_mom_says_2012-12-21_03-58-38.84.csv</td>
+    <td>type,name,normal msg,error msg,process time<br />speaking,1st word,"Today<br />",,0.02s<br />speaking,2nd word,"will<br />",,0.01s<br />speaking,3rd word,"not<br />",,0.01s<br />speaking,4th word,"be<br />",,0.01s<br />speaking,5th word,"the</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>mylogmsg.py</td>
+    <td>#!/usr/local/bin/python3<br />import termcolor<br /><br />class Mymsg:<br />    msgtype = { 'WARNING':   termcolor.colored('(Warning)', 'yellow'),<br />            'ERROR':     termcolor.colored('(Error)', 'red'),<br />            'NOTICE':    termcolor.colored('\n==>', 'cyan'),<br />            'PROGRESS':  termcolor.colored('->', 'magenta'),<br />            'COMPLETE':  termcolor.colored('\n==>', 'green')}</td>
+    <td></td>
+    <td>0.00s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>myparallel.py</td>
+    <td>#!/usr/local/bin/python3<br />import os <br />import sys<br />import subprocess<br />import collections<br />import datetime<br />import csv<br />import re<br />from time import sleep<br />from mylogmsg import logm, logp, logerr, logwarn, loggood</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>News_says_2012-12-21_03-56-34.63.csv</td>
+    <td>type,name,normal msg,error msg,process time<br />speaking,1st word,"Today<br />",,0.01s<br />speaking,2nd word,"is<br />",,0.01s<br />speaking,3rd word,"the<br />",,0.01s<br />speaking,4th word,"end<br />",,0.00s<br />speaking,5th word,"of</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>News_says_2012-12-21_03-58-38.60.csv</td>
+    <td>type,name,normal msg,error msg,process time<br />speaking,1st word,"Today<br />",,0.01s<br />speaking,2nd word,"is<br />",,0.01s<br />speaking,3rd word,"the<br />",,0.01s<br />speaking,4th word,"end<br />",,0.01s<br />speaking,5th word,"of</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>termcolor.py</td>
+    <td># coding: utf-8<br /># Copyright (c) 2008-2011 Volvox Development Team<br />#<br /># Permission is hereby granted, free of charge, to any person obtaining a copy<br /># of this software and associated documentation files (the "Software"), to deal<br /># in the Software without restriction, including without limitation the rights<br /># to use, copy, modify, merge, publish, distribute, sublicense, and/or sell<br /># copies of the Software, and to permit persons to whom the Software is<br /># furnished to do so, subject to the following conditions:<br />#</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>test.py</td>
+    <td>import myparallel as mp<br />import os<br /><br />class testParallel(mp.myparallel):<br />    def setupTaskPool(self, task_pool):<br />        for f in os.listdir():<br />            if os.path.splitext(f)[1] in ['.py', '.sh', '.txt', '.csv']:<br />                task_pool.append(mp.Task(<br />                    name = f,<br />                    task_type = '',</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>testargv.py</td>
+    <td>import argparse<br /><br />parser = argparse.ArgumentParser(<br />        description='Hello this is a description')<br />parser.add_argument('-mp', '--maxprocess', <br />        help='the maximum of parallel running processes. This number will be set smaller the number of CPU cores')<br />print(parser.parse_args())</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>testdelwheniter.py</td>
+    <td>"""task = ['a', 'b', 'c', 'd', 'e', 'f']<br /><br />#it = iter(task)<br /><br />def check(x):<br />    if x == 'b':<br />        print (x, 'be deleted')<br />        return False<br />    else:<br />        return True</td>
+    <td></td>
+    <td>0.01s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>verify.py</td>
+    <td>#!/usr/local/bin/python3<br />import os<br />import sys<br />import glob<br />import platform<br />import multiprocessing as mp<br />import subprocess<br />import termcolor    # for esay coloring in bash<br />from time import strftime, localtime, sleep    # for logging time</td>
+    <td></td>
+    <td>0.03s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>walkcand.py</td>
+    <td>#!/usr/local/bin/python3<br />import os<br />import os.path<br />import sys<br />import glob<br />import platform<br />import subprocess<br />import re<br />import csv<br />import termcolor    # for esay coloring in bash</td>
+    <td></td>
+    <td>0.02s</td>
+    </tr>
+    <tr>
+    <td>head</td>
+    <td>walkcand_new.py</td>
+    <td>#!/usr/local/bin/python3<br />import os<br />import os.path<br />import sys<br />import glob<br />import platform<br />import subprocess<br />import re<br />import csv<br />import termcolor    # for esay coloring in bash</td>
+    <td></td>
+    <td>0.02s</td>
+    </tr>
+    <tr>
+    <td>open log</td>
+    <td>html</td>
+    <td></td>
+    <td></td>
+    <td>0.13s</td>
+    </tr>
+  </tbody>
+</table>    </div>
+    <div id="footer" class="footer">
+      <div class="container">
+        <p class="muted credit">Template by <a href='http://ccwang002.github.com/'>Liang Bo Wang</a>. Powered by <a href='http://twitter.github.com/bootstrap/'>Bootstrap</a>.</p>
+      </div>
+    </div>
+   <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

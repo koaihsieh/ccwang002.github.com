@@ -1,0 +1,329 @@
+type,name,normal msg,error msg,process time
+head,blast_new.py,"#!/usr/local/bin/python3
+import os
+import sys
+import glob
+import platform
+import subprocess
+import re
+import termcolor    # for esay coloring in bash
+import datetime
+from time import strftime, localtime, sleep    # for logging time
+",,0.01s
+head,blastlogparser.py,"import os
+import os.path
+import sys
+import re
+import termcolor    # for esay coloring in bash
+import csv
+from time import strftime
+msgtype = { 'WARNING':   termcolor.colored('(Warning)', 'yellow'),
+            'ERROR':     termcolor.colored('(Error)', 'red'),
+            'NOTICE':    termcolor.colored('\n==>', 'cyan'),
+",,0.01s
+head,blastpercand.py,"#!/usr/local/bin/python3
+import os
+import sys
+import glob
+import platform
+import subprocess
+import re
+import termcolor    # for esay coloring in bash
+import datetime
+from time import strftime, localtime, sleep    # for logging time
+",,0.00s
+head,clip.py,"#!/usr/local/bin/python3
+import os
+import sys
+import glob
+import platform
+import multiprocessing as mp
+import subprocess
+import termcolor    # for esay coloring in bash
+from time import strftime, localtime, sleep    # for logging time
+
+",,0.00s
+head,clip_new.py,"#!/usr/local/bin/python3
+import os
+import sys
+import glob
+import platform
+import subprocess
+import re
+import termcolor    # for esay coloring in bash
+import datetime
+import csv
+",,0.01s
+head,clipAndPool.sh,"#!/bin/bash
+fnt(){
+    declare -a processFiles=(""${!1}"")
+    local pooledfilename=""${2}_clipped_pooled""
+    echo ""Clear file: ${pooledfilename}.fa""
+    echo """" > ${pooledfilename}.fa
+
+    echo '====== Pooling ======'
+    for i in ""${processFiles[@]}""
+    do
+",,0.01s
+head,collapse.py,"#!/usr/local/bin/python3
+import os
+import sys
+import glob
+import platform
+import subprocess
+import re
+import termcolor    # for esay coloring in bash
+import datetime
+from time import strftime, localtime, sleep    # for logging time
+",,0.01s
+head,EOW.py,"import myparallel as mp
+import os
+
+class EndOfWorld(mp.myparallel):
+    
+    def __init__(self, split_s, name, max_process=4):
+        self.st = split_s        
+        super(EndOfWorld, self).__init__(max_process=max_process, name=name)
+
+    def setupTaskPool(self, task_pool):
+",,0.00s
+head,fastqdump.py,"#!/usr/local/bin/python3
+import os
+import sys
+import glob
+import platform
+import subprocess
+import re
+import termcolor    # for esay coloring in bash
+import datetime
+import csv
+",,0.01s
+head,fastqdump_parser.py,"import os
+import os.path
+import sys
+import re
+import termcolor    # for esay coloring in bash
+import csv
+from time import strftime
+msgtype = { 'WARNING':   termcolor.colored('(Warning)', 'yellow'),
+            'ERROR':     termcolor.colored('(Error)', 'red'),
+            'NOTICE':    termcolor.colored('\n==>', 'cyan'),
+",,0.01s
+head,ftpdownload.py,"#!/usr/bin/env python3
+
+import ftplib
+from urllib.parse import unquote, urlparse
+
+link = 'ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP009%2FSRP009408'
+o = urlparse(link)
+
+# Connection information
+server = o.netloc
+",,0.01s
+head,logparser.py,"import os
+import os.path
+import sys
+import re
+import termcolor    # for esay coloring in bash
+import csv
+from time import strftime
+msgtype = { 'WARNING':   termcolor.colored('(Warning)', 'yellow'),
+            'ERROR':     termcolor.colored('(Error)', 'red'),
+            'NOTICE':    termcolor.colored('\n==>', 'cyan'),
+",,0.01s
+head,makedb.py,"#!/usr/local/bin/python3
+import os
+import sys
+import glob
+import platform
+import subprocess
+import re
+import termcolor    # for esay coloring in bash
+import datetime
+from time import strftime, localtime, sleep    # for logging time
+",,0.01s
+head,makedb_direct.py,"#!/usr/local/bin/python3
+import os
+import sys
+import glob
+import platform
+import subprocess
+import re
+import termcolor    # for esay coloring in bash
+import datetime
+from time import strftime, localtime, sleep    # for logging time
+",,0.01s
+head,makedb_new.py,"#!/usr/local/bin/python3
+import os
+import sys
+import glob
+import platform
+import subprocess
+import re
+import termcolor    # for esay coloring in bash
+import datetime
+import csv
+",,0.01s
+head,manageDataset.py,"import re
+
+allsamples='''GSM838063	159T
+GSM838064	159NT
+GSM838065	304T
+GSM838066	304NT
+GSM838067	325T
+GSM838068	325NT
+GSM838069	541T
+GSM838070	541NT
+",,0.01s
+head,My_mom_says_2012-12-21_03-54-59.83.csv,"type,name,normal msg,error msg,process time
+speaking,1st word,""Today
+"",,0.01s
+speaking,2nd word,""will
+"",,0.01s
+speaking,3rd word,""not
+"",,0.00s
+speaking,4th word,""be
+"",,0.00s
+speaking,5th word,""the
+",,0.01s
+head,My_mom_says_2012-12-21_03-56-34.79.csv,"type,name,normal msg,error msg,process time
+speaking,1st word,""Today
+"",,0.02s
+speaking,2nd word,""will
+"",,0.02s
+speaking,3rd word,""not
+"",,0.01s
+speaking,4th word,""be
+"",,0.01s
+speaking,5th word,""the
+",,0.01s
+head,My_mom_says_2012-12-21_03-58-38.84.csv,"type,name,normal msg,error msg,process time
+speaking,1st word,""Today
+"",,0.02s
+speaking,2nd word,""will
+"",,0.01s
+speaking,3rd word,""not
+"",,0.01s
+speaking,4th word,""be
+"",,0.01s
+speaking,5th word,""the
+",,0.01s
+head,mylogmsg.py,"#!/usr/local/bin/python3
+import termcolor
+
+class Mymsg:
+    msgtype = { 'WARNING':   termcolor.colored('(Warning)', 'yellow'),
+            'ERROR':     termcolor.colored('(Error)', 'red'),
+            'NOTICE':    termcolor.colored('\n==>', 'cyan'),
+            'PROGRESS':  termcolor.colored('->', 'magenta'),
+            'COMPLETE':  termcolor.colored('\n==>', 'green')}
+
+",,0.00s
+head,myparallel.py,"#!/usr/local/bin/python3
+import os 
+import sys
+import subprocess
+import collections
+import datetime
+import csv
+import re
+from time import sleep
+from mylogmsg import logm, logp, logerr, logwarn, loggood
+",,0.01s
+head,News_says_2012-12-21_03-56-34.63.csv,"type,name,normal msg,error msg,process time
+speaking,1st word,""Today
+"",,0.01s
+speaking,2nd word,""is
+"",,0.01s
+speaking,3rd word,""the
+"",,0.01s
+speaking,4th word,""end
+"",,0.00s
+speaking,5th word,""of
+",,0.01s
+head,News_says_2012-12-21_03-58-38.60.csv,"type,name,normal msg,error msg,process time
+speaking,1st word,""Today
+"",,0.01s
+speaking,2nd word,""is
+"",,0.01s
+speaking,3rd word,""the
+"",,0.01s
+speaking,4th word,""end
+"",,0.01s
+speaking,5th word,""of
+",,0.01s
+head,termcolor.py,"# coding: utf-8
+# Copyright (c) 2008-2011 Volvox Development Team
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the ""Software""), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+",,0.01s
+head,test.py,"import myparallel as mp
+import os
+
+class testParallel(mp.myparallel):
+    def setupTaskPool(self, task_pool):
+        for f in os.listdir():
+            if os.path.splitext(f)[1] in ['.py', '.sh', '.txt', '.csv']:
+                task_pool.append(mp.Task(
+                    name = f,
+                    task_type = '',
+",,0.01s
+head,testargv.py,"import argparse
+
+parser = argparse.ArgumentParser(
+        description='Hello this is a description')
+parser.add_argument('-mp', '--maxprocess', 
+        help='the maximum of parallel running processes. This number will be set smaller the number of CPU cores')
+print(parser.parse_args())
+",,0.01s
+head,testdelwheniter.py,"""""""task = ['a', 'b', 'c', 'd', 'e', 'f']
+
+#it = iter(task)
+
+def check(x):
+    if x == 'b':
+        print (x, 'be deleted')
+        return False
+    else:
+        return True
+",,0.01s
+head,verify.py,"#!/usr/local/bin/python3
+import os
+import sys
+import glob
+import platform
+import multiprocessing as mp
+import subprocess
+import termcolor    # for esay coloring in bash
+from time import strftime, localtime, sleep    # for logging time
+
+",,0.03s
+head,walkcand.py,"#!/usr/local/bin/python3
+import os
+import os.path
+import sys
+import glob
+import platform
+import subprocess
+import re
+import csv
+import termcolor    # for esay coloring in bash
+",,0.02s
+head,walkcand_new.py,"#!/usr/local/bin/python3
+import os
+import os.path
+import sys
+import glob
+import platform
+import subprocess
+import re
+import csv
+import termcolor    # for esay coloring in bash
+",,0.02s
+open log,html,,,0.13s

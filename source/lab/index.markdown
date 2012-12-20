@@ -9,6 +9,8 @@ footer: true
 ---
 Here is Liang Bo Wang's work summary.
 
+* 12/21 [slides](/blog/2012/12/21/work-log-12-slash-21/)
+* 12/07 [slides](/blog/2012/12/05/work-log-12-slash-5/)
 * 11/23 [slides](/blog/2012/11/20/work-log-11-slash-20/)
 * Summer Report [slides & report][summer-report], which is a dir.
 * 10/15 [ [Validation by blastn][1015-1], [Processed dataset][1015-2] ]

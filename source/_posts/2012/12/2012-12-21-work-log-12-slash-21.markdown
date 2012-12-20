@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Work Log - 12/21"
+date: 2012-12-21 05:13
+comments: true
+categories: 
+ - lab log
+---
+
+## Summary
+* [Sample Output 1](/lab/data/1221/My_mom_says_2012-12-21_03-26-10.78.html)
+* [Sample Output 2](/lab/data/1221/testParallel_2012-12-21_05-07-59.23.html)
+* Slides
+
+<!-- more -->
+<script async class="speakerdeck-embed" data-id="11f366b02d160130f81b1231381b0c28" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
