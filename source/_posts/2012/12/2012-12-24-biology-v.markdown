@@ -1,0 +1,87 @@
+---
+layout: post
+title: "Biology V"
+date: 2012-12-24 10:14
+comments: true
+categories: 
+ - bio class
+---
+
+## Summary
+* Genetics 遺傳學 Ch14
+
+<!-- more -->
+
+* 孟德爾當時受到達爾文顯學的影響。
+
+
+
+## Foundations of Genetics - 孟德爾豌豆實驗
+* Gregor Mendel and his garden peas (豌豆)
+* 第一個用科學方法觀察遺傳
+* Quantitative Approach
+* distinct heritable features, or **characters**
+    * character variants **traits**
+* 自我授精產生的花粉能達到「純種」交配, **true breeding**
+* **hybridization** (雜交）
+* P generation, F1 generation, F2 generation
+
+### Law of Segregation
+* Result
+    * P Gen: Purple X White
+    * F1 Gen: All purple
+    * F2 Gen: 3/4 purple, 1/4 white
+* Mendel called the purple flower color a dominant trait and the white flower color a recessive trait
+* heritable factor: what we now call a gene
+
+### Mendel’s Model
+* Alternative versions of genes
+    * now called **alleles** (對偶基因）
+    * gene resides at a specific **locus**（基因座）on a specific chromosome
+    * homozygote（同型）
+    * heterozygote (異型）
+* for each character, an organism inherits two alleles, one from each parent
+* if the two alleles at a locus differ
+    * then one (the dominant allele) determines the organism’s appearance
+    * and the other (the recessive allele) has no noticeable effect on appearance
+* Law of Segregation
+    * two alleles for a heritable character separate (segregate) during gamete formation and end up in different gametes
+    * each gamete(配子）get only one of the two alleles
+* Punnette square
+    * possible combinations of sperm and egg 
+* Phenotype（表現型） and Genotype（基因型）
+* Testcross - 確定個體的基因型
+    * 顯性 Pp, PP  X pp
+        * PP: 全部紫色
+        * Pp：紫白各半
+        
+### The Law of Independent Assortment
+* monohybrids
+* monohybrid cross 
+* dihybrid crosses
+    * 不同 character 的行為互為獨立事件
+* Strictly speaking, this law applies only to genes on different, nonhomologous chromosomes or those far apart on the same chromosome
+* Genes located near each other on the same chromosome tend to be inherited together
+* SNP = Single Nucleotide Polymorphism
+    * 2 millions 
+    * snp 的不同會不會影響相鄰的基因
+
+### ￼多對偶基因 (Multiple Alleles)
+* Ex Blood type
+
+### Epistasis (上位現象）
+
+### Polygenic Inheritance
+* Ex 身高
+
+### Pleiotropy (基因多效性)
+* 一個基因可以控制很多類的表現型
+
+### Pedigree analysis
+* widow's peak -> dominant trait
+* attached earlobe -> recessive trait
+* Achondroplasia -> dominant trait
+* Sickle-Cell Anemia
+    * 受環境的影響
+    * 非洲黑人
+    * 帶的是異型接合（Pp），會增加對瘧疾的抵抗性
