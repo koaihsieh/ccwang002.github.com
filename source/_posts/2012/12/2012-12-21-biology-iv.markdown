@@ -7,6 +7,7 @@ categories:
  - bio class
 ---
 
+<!-- more -->
 
 * BLAST = Basic Local Alignment Search Tool
 
