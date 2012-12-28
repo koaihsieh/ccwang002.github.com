@@ -13,7 +13,7 @@ categories:
 <!-- more -->
 
 * Site for SRA search: <http://trace.ddbj.nig.ac.jp/DRASearch/>
-
+* Data science <http://www.p-value.info/2012/11/free-datascience-books.html>
 ## dataset used
 * GSE 33858
     * 372612 (normal size)
@@ -28,6 +28,9 @@ categories:
     * SRR191434
     * SRR191443
 
+## new dataset
+* <http://trace.ddbj.nig.ac.jp/DRASearch/study?acc=SRP012546>
+* 皮膚癌 <http://trace.ddbj.nig.ac.jp/DRASearch/study?acc=SRP011422>
 
 ## cutadpt
 Official site: <http://code.google.com/p/cutadapt>

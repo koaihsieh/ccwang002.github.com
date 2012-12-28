@@ -1,0 +1,150 @@
+---
+layout: post
+title: "Biology VI"
+date: 2012-12-28 10:23
+comments: true
+categories: 
+ - bio class
+---
+
+* Met, Tri 為一對一的mapping
+
+<!-- more -->
+## Mutation 突變
+
+* 通常來說不好 (harmful > beneficial)
+
+### Point mutation
+* 一個base的改變
+    * A -> T
+    * insertion/deletion
+    
+### large-/small-scale alteration
+* 200 bp
+    * \> 200bp -> large
+    * < 200bp -> small-scale
+    
+### Gene mutations may/may not affect amino acid sequences
+* Silent or neutral mutations (緘默突變)
+    * not alter amino acid sequences
+* Missense mutations (錯義突變)
+    * change an amino acid
+    * Sickle-cell anemia (鎌刀型貧血症)
+* Nonsense mutation (無義意突變)
+    * a normal codon -> a stop/termination codon
+    * Produces a truncated polypeptide (比較短的）
+* Frameshift mutation (移碼突變)
+    * Addition/deletion of nucleotides != 3k
+    * 後面胺基酸的序列完全改變
+    
+### ￼Gene mutations outside of coding sequences
+* Promoter
+    * Up/down promoter mutation
+* Transcriptional response element / binding site
+    * 影響本來的調控
+* Splice junction
+    * 改變本來 introns, exoons 的切法
+    
+### Germ-line (生殖系), somatic cell mutation
+* mutation can be passed
+* Germ-line cells give rise to gametes (配子)
+
+### ￼Spontaneous (自發的) or induced (誘導的) mutations
+* 比較低等的生物，突變的機率比較高
+* 抗藥性、AIDS
+
+### Cause of gene mutation
+* direct -> DNA damage
+* indirect -> H2O + e- -> OH- (free radicals) => oxidative stress so DNA damage
+
+### Mutagen
+* 誘發突變的物質
+* chemical or physical agents
+* Nitrous acid (亞硝酸)
+    * Modifying nucleotide structure
+    * 讓本來 AT CG 配對錯誤
+* base analogue (鹼基類似物), Intercalation(中間插入) agent
+    * ex Acridine Orange, Y啶橘
+* Ionizing radiation (游離輻射)
+    * X rays and gamma rays
+    * Base deletions, breaks in 1 or both DNA strands
+* Nonionizing radiation
+    * UV
+    * cause formation of thymine dimer (改變原本 DNA 氫鍵結構）
+    
+### Ames test (安姆氏試驗)
+* use Salmonella typhimurium (沙門氏菌) that cannot synthesize histidine (組氨酸)
+    * due to point mutation
+    * must grow with histidine added to medium
+* if mutation occurs, then bacteria may not require histidine
+    * 會有自發性的突變
+* add mutagen，看突變的比例有沒有增加
+* @人類cell use TKgene = Thymidine Kinase, HPRT 兩個基因用來做類似Ames Test，看突變的效率
+
+## DNA Repair
+* Require
+    * DNA damage detected
+    * repair the damage
+    
+### Type of repair
+* direct repair
+    * 直接用酵素來修補
+    * Photoreactivation repair
+        * photolyase
+        
+* Altered DNA strand removed and new segment synthesized (more common)
+    * Base excision repair
+        * 某個鹼基ATCG壞掉，直接去掉(DNA glycosylase)
+        * AP endoncluease 去掉一個部份的sequences
+        * 最後用 DNA Poly I, DNA ligase 填上新的序列    * Nucleotide excision repair (NER,核苷酸切除修復)
+        * Most common
+        * 跟前面類似，跟用的酵素跟前者不一樣    * Methyl-directed mismatch repair 
+    * Double strand break repair
+    
+### NER and human genetic disease
+* mutation 造成沒有辦法 DNA 修復
+*  (XP,色素性乾皮病), (CS,柯凱因氏症候群), and PIBIDS
+* Photosensitivity is a common characteristic
+    * inability to repair UV-induced lesions
+    
+    
+## Cancer
+* 10% is an inherited trait
+* carcinogens (致癌物)
+* originates from a single cell
+    * 正常細胞都受到嚴密的調控
+    * 突變的cell會快速增長
+    
+### Oncogen (致癌基因)
+* 因突變使得這個基因被過度激活 -> uncontrolled cell growth
+* Cell division regulated by hormones called growth factors
+
+### ￼Proto-oncogene (原致癌基因)
+* Normal gene that, if mutated, can become an oncogene
+* common genetic changes
+    * Missense mutations (錯義突變)
+    * Gene amplifications (基因放大)
+    * Chromosomal translocations (染色體轉位)
+        * 費城染色體
+    * Retroviral insertions(反轉錄病毒插入)
+        * HPV 人類乳突病毒 -> 子宮頸癌 and many … 
+        
+### ￼Checkpoint proteins
+*  Proteins called cyclins and cyclin- dependent protein kinases (cdks)
+*  p53 about 50% of all human cancers are associated with defects in this gene
+    *  對正常的細胞來說沒有影響
+* Rb gene
+    * retinoblastoma (視網膜母細胞瘤)
+    
+### Loss of tumor-suppressor gene function
+
++(active)/-(inactive) => -/- or 0(gone)/-
+heterozygous => Loss of Heterozygous(LoH)
+
+* Mutation occurs specifically within a tumor- suppressor gene to inactivate its function* Chromosome loss may contribute if the missing chromosome carries one or more tumor-suppressor genes* Abnormal methylation of CpG islands near promoter regions 
+
+### ￼癌症的治療
+* 預防癌症的發生
+* 阻止癌細胞的擴散
+    * 腫瘤生長(Tumor growth)
+    * 轉移(Metastasis)
