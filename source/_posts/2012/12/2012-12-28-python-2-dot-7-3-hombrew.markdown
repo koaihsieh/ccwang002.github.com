@@ -31,7 +31,7 @@ $ pip install nose
 $ brew tap samueljohn/python
 # install numpy 1.6.2, --devel will install 1.7.0b2
 $ brew install numpy --with-openblas 
-$ brew install scipy
+$ brew install scipy --with-openblas
 $ pip install matplotlib
 $ pip install tornado
 $ pip install pyzmq
@@ -55,3 +55,16 @@ Ran 1214 tests in 352.656s
 OK (KNOWNFAIL=301)
 
 {% endcodeblock %}
+
+
+detailed version by `$ pip-2.7 freeze`.
+
+* distribute==0.6.32
+* ipython==0.13.1
+* matplotlib==1.2.0
+* nose==1.2.1
+* numpy==1.6.2
+* pyzmq==2.2.0.1
+* scipy==0.11.0
+* tornado==2.4.1
+* wsgiref==0.1.2
