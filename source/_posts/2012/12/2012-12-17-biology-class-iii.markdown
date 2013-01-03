@@ -40,7 +40,7 @@ categories:
     * 6000 genes
 * 1st 定序的動物：*C. elegans*
 
-### Prokaryotic Genomes (原核基因體）
+## Prokaryotic Genomes (原核基因體）
 * 比較小，來練兵
 * 感染多從細菌引起
 * 演化
@@ -61,15 +61,21 @@ categories:
     * Auto-Sequencer: ABI(Applied Biosystem Inc.)
     * ABI 提供 300台機器來定序
     * 主要雇用電腦人員來處理資訊
-* 2/3 of this genome have predicted function
+* 2/3 of this genome have predicted function
 
 ### Three-Stage Approach to Genome Sequencing
+Refer to pic in P.11
+
 * The project had three stages 
     * Genetic (or linkage) mapping 
-    * Physical mapping    * DNA sequencing
+    * Physical mapping
+    * DNA sequencing
 * Linkage map
-    * 利用限制酶切出的長度片段不同來判斷序列有沒有改變（上次教的）
+    * 利用限制酶切出的長度片段不同來判斷序列的位置（上次教的）
+    * location of genetic marker on chromosome
+    * use recombination frequencies (聯會頻率) to determine the order/distance between genetic marker
 * Physical map
+    * 用dna小片段overlap的位置來判斷每個片斷的相對位置
     * 前後接合
 
 ## Human Genome Project（人類基因體解碼）
@@ -97,7 +103,7 @@ categories:
     * Venter有300台，這樣後面的機器其實不能運作
     * 隨機切斷的片段分開定序
     * 最後再用軟體被片段的dna合在一起
-    * 缺點：可能會會gap，再用傳統的方式(Sanger)來接合
+    * 缺點：可能會有gap，再用傳統的方式(Sanger)來接合
 
 ## Eukaryotic Genomes（真核基因體）
 * Genome size is not the same as the number of genes
@@ -119,13 +125,20 @@ categories:
 
 ### Gene variation
 * 各生物間基因的高度相似性
-* 人與人之間,差異約0.2%* 人與黑猩猩之間,差異約2%
-## Transposable Elements (轉位單元)
+* 人與人之間,差異約0.2%
+* 人與黑猩猩之間,差異約2%
+
+
+## Transposable Elements (轉位單元)
 * Transposition (轉位作用) – short segment of DNA moves from original site to a new site
-* Transposable elements (TEs) – DNA segments that move    * “Jumping genes”* Both ends of many TEs have inverted repeats (IRs)    * identical but run in opposite directions
+* Transposable elements (TEs) – DNA segments that move
+    * “Jumping genes”
+* Both ends of many TEs have inverted repeats (IRs)
+    * identical but run in opposite directions
     * IR ranges from 9 to 40 bp
 * may contain a central region that encodes transposase
-    * an enzyme that facilitates transposition* may facilitate recombination, or crossing over between different chromosomes
+    * an enzyme that facilitates transposition
+* may facilitate recombination, or crossing over between different chromosomes
 * insertion with TEs
     * within a protein coding seq, block protein production
     * within a regulatory seq, in/decrease protein production
@@ -141,20 +154,29 @@ categories:
     * Ex外在環境 輻射線 -> DNA 修補的酵素
     
 ### 2D Gel Electrophoresis（二維電泳）
+refer to pic in P.41
+
 * isoelectric focus 
     * 第一維：用帶電量來區分蛋白質, 用pH來排列等電位（帶電會影響泳動速度）
-    * separates proteins according to their net charge at a given pH
-![](http://1.bp.blogspot.com/-hJMxoQalLxQ/T_hLBMMSTuI/AAAAAAAABf8/Ae2530wP03s/s1600/Isoelectric+Point.gif)
-![](http://site.motifolio.com/images/Separation-of-protein-molecules-by-isoelectric-focusing-6111185.png)
+    * separates proteins according to their net charge at a given pH 
+    ![](http://1.bp.blogspot.com/-hJMxoQalLxQ/T_hLBMMSTuI/AAAAAAAABf8/Ae2530wP03s/s1600/Isoelectric+Point.gif)  
+    ![](http://site.motifolio.com/images/Separation-of-protein-molecules-by-isoelectric-focusing-6111185.png)
 * 第二維：泳動的速度由分子大小來決定
 
 ### Mass Spectroscopy (質譜儀) 
 * LC-Mass-Mass
+* Tandem mass spectrometry uses 2 spectrometers
+    * first mass of a given peptide
+    * second mass after the peptide has been digested
 * Proteins can be identified by their unique amino acid sequence
+    * dan codon is still unknown
 
 ## Proteomes (蛋白體)
-* Relative abundance of proteins    * Abundance in genome    * Abundance in cell
-* Ex liver vs muscle
+* Relative abundance of proteins
+    * Abundance in genome
+    * Abundance in cell
+
+* Ex liver vs muscle
     * liver:
         * metabolic enzymes > 50%
         * structural proteins < 10%
