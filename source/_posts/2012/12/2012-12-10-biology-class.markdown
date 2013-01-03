@@ -204,12 +204,14 @@ plasmid map 當中包含以下部份：
 * Gene expression
 * Genotyping-polymorphisms (SNP) and gene copy number (aCGH)  
 * Epigenetic methylation chip
-    * also called Methylated DNA immunoprecipitation    * 基因後修飾(甲基化、磷酸化)    * 影響基因的表現量      
+    * also called Methylated DNA immunoprecipitation
+    * 基因後修飾(甲基化、磷酸化)
+    * 影響基因的表現量   
 ![](http://ag.arizona.edu/research/xwang/milestones/Rice_Chipchip.jpg)
 ![MeDIP, MeDIP chip](http://upload.wikimedia.org/wikipedia/commons/3/3f/Medip-final-3.jpg)
-* microRNA
-* Binding site identification - ChIP-on-chip
-    * investigate interactions between proteins and DNA in vivo.
-    * chromatin immunoprecipitation ("ChIP") with microarray technology ("chip")  
+* microRNA
+* Binding site identification - ChIP-on-chip
+    * investigate interactions between proteins and DNA in vivo.
+    * chromatin immunoprecipitation ("ChIP") with microarray technology ("chip")  
 Chromatin immunoprecipitation (ChIP) assay 這是一種分子生物實驗的方法，其目的在決定某蛋白質(包括轉錄因子)是否會結合在活細胞或組織染色質的某個特定區域的方法。其原理在於活細胞內的DNA結合蛋白(包括transcription factors)，當它們位於適當位置後，能夠與染色質交互連接，此通常是利用甲醛固定來達成。在固定後，接著將細胞lyse並利用超音波使DNA斷成長度約0.2~1 kb的碎片，一旦蛋白質被固定在染色質而且染色質被斷成斷片後，整個蛋白質-DNA複體可利用對蛋白質具專一性的抗體來認知結合而使其發生免疫沈澱。然後再將DNA從蛋白質/DNA中分離純化出來，所分離出之DNA斷片的鑑定可以利用PCR來進行，而PCR所使用的primers則是用當初猜測蛋白質會結合在那個我們所推測之DNA區域而設計的。如此即可判定某蛋白質是否會結合在DNA的某個區域。利用DNA微陣列還可以在衍生出所謂的ChIP on chip或ChIP-chip。  
 ![ChIP-on-chip (POI = protein of interest)](http://upload.wikimedia.org/wikipedia/en/thumb/8/8d/ChIP-on-chip_wet-lab.png/800px-ChIP-on-chip_wet-lab.png)    
