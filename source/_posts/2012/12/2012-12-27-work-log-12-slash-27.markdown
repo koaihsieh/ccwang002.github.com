@@ -14,6 +14,7 @@ categories:
 
 * Site for SRA search: <http://trace.ddbj.nig.ac.jp/DRASearch/>
 * Data science <http://www.p-value.info/2012/11/free-datascience-books.html>
+
 ## dataset used
 * GSE 33858
     * 372612 (normal size)
@@ -22,11 +23,11 @@ categories:
 * GSE 29173
     * SRR191634 (strange, largest ratio = 149681.15)
     * SRR191629 (strange, least ratio = 614.37)
-    * SRR191623 (ratio = 
-    * SRR191624
-    * SRR191395
-    * SRR191434
-    * SRR191443
+    * SRR191623 (strange) 
+    * SRR191624 (strange)
+    * SRR191395 (normal ratio)
+    * SRR191434 (normal ratio)
+    * SRR191443 (normal ratio)
 
 ## new dataset
 * <http://trace.ddbj.nig.ac.jp/DRASearch/study?acc=SRP012546>
