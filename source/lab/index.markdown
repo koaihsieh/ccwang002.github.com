@@ -67,3 +67,4 @@ Using the following tools:
 [git]: /note/git
 [note]: /note
 
+<center><img src="/images/macarthur.png"></center>
