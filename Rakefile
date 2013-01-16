@@ -182,9 +182,16 @@ end
 
 desc "Open lab page"
 task :openlab do
-  labpage_dir = "#{source_dir}/lab/index.markdown"
-  puts "Opening lab page: #{labpage_dir}"
-  system("open #{labpage_dir}")
+  labpage_addr = "#{source_dir}/lab/index.markdown"
+  puts "Opening lab page: #{labpage_addr}"
+  system("open #{labpage_addr}")
+end
+
+desc "Open note dir"
+task :opennote do
+  note_dir = "#{source_dir}/note"
+  puts "Opening note dir: #{note_dir}"
+  system("open #{note_dir}")
 end
 
 # usage rake isolate[my-post]

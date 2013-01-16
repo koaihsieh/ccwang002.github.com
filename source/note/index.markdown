@@ -30,6 +30,8 @@ For windows I would prefer to setup an environment which works exactly in Unix-l
 ## Perl
 
 ## Python
+* [here][python]
 
+[python]: /note/python
 
 
