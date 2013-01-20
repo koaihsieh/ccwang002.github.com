@@ -35,3 +35,28 @@ For windows I would prefer to setup an environment which works exactly in Unix-l
 [python]: /note/python
 
 
+##Useful Links##
+* Galaxy setup: [here](/lab/galaxy/)
+* Work Log of the whole dry lab team: [here](https://docs.google.com/spreadsheet/ccc?key=0Aq56AmAMeOpPdHFLbjlQUTltZWlETVB2TnA4a1VrOWc&hl=en#gid=59)
+* Useful CentOS command: [here](/lab/CentOSCmd/)
+* CentOS process control by vBird: [here](http://linux.vbird.org/linux_basic/0440processcontrol.php)
+
+
+<a name='#initial'></a>
+##Initialization & Setup##
+Using the following tools:
+
+* [octopress](http://octopress.org/)  
+  framework for this site.
+* [gh-pages](http://pages.github.com/)  
+  where this site is hosted.     
+* [Key.CSS](http://michaelhue.com/keyscss/)  
+  show the key in a beautiful way
+* Markdown syntax
+    * [語法介紹 (中文)](http://markdown.tw/)  
+    * Free editor on Mac: [Mou](http://mouapp.com/), Win: [MarkdownPad](http://markdownpad.com/)
+* Git
+
+
+
+

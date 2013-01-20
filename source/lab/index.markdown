@@ -9,10 +9,10 @@ footer: true
 ---
 Here is Liang Bo Wang's work summary.
 
-* Semester 101-1 [Report](https://www.dropbox.com/s/w89jojb1liy6qfg/report-100-1.pdf)  
-* 12/21 [slides](/blog/2012/12/21/work-log-12-slash-21/)
-* 12/07 [slides](/blog/2012/12/05/work-log-12-slash-5/)
-* 11/23 [slides](/blog/2012/11/20/work-log-11-slash-20/)
+* Semester 101-1 [ [report](https://www.dropbox.com/s/w89jojb1liy6qfg/report-100-1.pdf) ] 
+* 12/21 [ [slides](/blog/2012/12/21/work-log-12-slash-21/) ]
+* 12/07 [ [slides](/blog/2012/12/05/work-log-12-slash-5/) ]
+* 11/23 [ [slides](/blog/2012/11/20/work-log-11-slash-20/) ]
 * Summer Report [slides & report][summer-report], which is a dir.
 * 10/15 [ [Validation by blastn][1015-1], [Processed dataset][1015-2] ]
 * 09/19 [ [pptx][0919-1], [Workflow][0919-2] ]
@@ -31,41 +31,14 @@ Here is Liang Bo Wang's work summary.
 
 
 ##miRNA
-* [Preparation](/lab/miRNA) **Deprecated!!**  
-  For newest information please refer to the work log.
+For newest information please refer to the work log.  
+This [link][summary] summarizes current work and provide some quick link collected from work logs.  
+
+* Summary [link][summary]
+* [Old learning sites](/lab/miRNA/old)  
 * Collection of [adaptors] of NGS.
 
 [adaptors]: /lab/data/Illumina_Adapters.txt
-
-
-##Useful Links##
-* Galaxy setup: [here](/lab/galaxy/)
-* Work Log of the whole dry lab team: [here](https://docs.google.com/spreadsheet/ccc?key=0Aq56AmAMeOpPdHFLbjlQUTltZWlETVB2TnA4a1VrOWc&hl=en#gid=59)
-* Useful CentOS command: [here](/lab/CentOSCmd/)
-* CentOS process control by vBird: [here](http://linux.vbird.org/linux_basic/0440processcontrol.php)
-
-<a name='#initial'></a>
-##Initialization & Setup##
-Using the following tools:
-
-* [octopress](http://octopress.org/)  
-  framework for this site.
-  
-* [gh-pages](http://pages.github.com/)  
-  where this site is hosted.
-        
-* [Key.CSS](http://michaelhue.com/keyscss/)  
-  show the key in a beautiful way
-    
-* Markdown syntax
-    * [語法介紹 (中文)](http://markdown.tw/)  
-    * Free editor on Mac: [Mou](http://mouapp.com/), Win: [MarkdownPad](http://markdownpad.com/)
-
-
-* Git - Version control <a name='git'></a>  
-  Please refer to [note] page or [git] directly.
-  
-[git]: /note/git
-[note]: /note
+[summary]: /lab/mirna/
 
 <center><img src="/images/macarthur.png"></center>

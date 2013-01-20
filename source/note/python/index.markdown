@@ -10,4 +10,4 @@ footer: true
 ## Reference
 
 * A decent guide for python  <http://docs.python-guide.org/en/latest/>
-* 
+* perl, php, python, ruby syntax comparison sheet <http://hyperpolyglot.org/scripting>
