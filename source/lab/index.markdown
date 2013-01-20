@@ -7,7 +7,9 @@ sharing: false
 footer: true
 
 ---
-Here is Liang Bo Wang's work summary.
+Work Log of the whole dry lab team: [here](https://docs.google.com/spreadsheet/ccc?key=0Aq56AmAMeOpPdHFLbjlQUTltZWlETVB2TnA4a1VrOWc&hl=en#gid=59)  
+
+Following is Liang Bo Wang's work summary.
 
 * Semester 101-1 [ [report](https://www.dropbox.com/s/w89jojb1liy6qfg/report-100-1.pdf) ] 
 * 12/21 [ [slides](/blog/2012/12/21/work-log-12-slash-21/) ]

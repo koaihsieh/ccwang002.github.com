@@ -19,15 +19,9 @@ For windows I would prefer to setup an environment which works exactly in Unix-l
 [macenv]: /note/macenv
 [winenv]: /note/winenv
 
-
 ## Git
 * [here][git]
-
 [git]:/note/git
-
-## R
-
-## Perl
 
 ## Python
 * [here][python]
@@ -37,7 +31,6 @@ For windows I would prefer to setup an environment which works exactly in Unix-l
 
 ##Useful Links##
 * Galaxy setup: [here](/lab/galaxy/)
-* Work Log of the whole dry lab team: [here](https://docs.google.com/spreadsheet/ccc?key=0Aq56AmAMeOpPdHFLbjlQUTltZWlETVB2TnA4a1VrOWc&hl=en#gid=59)
 * Useful CentOS command: [here](/lab/CentOSCmd/)
 * CentOS process control by vBird: [here](http://linux.vbird.org/linux_basic/0440processcontrol.php)
 
