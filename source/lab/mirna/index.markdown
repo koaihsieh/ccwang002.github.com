@@ -9,7 +9,8 @@ footer: true
 這邊記錄了一些近期工作所需要常用的資訊。
 Here collects some useful information for recent work.
 ### To do next
-* use `cutadapt` for adapter trimming.
+* use `cutadapt` and `Flicker` for adapter trimming.
+* plot using box plot.
 * 把 workflow 串起來
 
 ### Dataset in use
@@ -18,6 +19,7 @@ Here collects some useful information for recent work.
 
 Dataset     | Cancer Type        | Sample Size
 ----------- | -------------      | :------------
+[GSE29173]  | Breast Cancer      | 
 [GSE33858]  | Lung Cancer        | 32 patients <br />21 adenocarcinoma patients (20 pairs of T+NT and 1 non-pair T) <br />11 squamous cell carcinoma patients (10 pairs of T+NT and 1 non-pair T).  
 [GSE37710]  | Pancreatic Cancer  | 352 participants, sample size unknown.
 
@@ -25,7 +27,8 @@ Dataset     | Cancer Type        | Sample Size
 [GSE33858]: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE33858
 [GSE37710]: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE37710
 
-
+### Candidate Type
+* [candidates](/blog/2012/10/25/work-log-10-slash-25/) map to exon
 
 <!-- End of work summary -->
 ## Good Sites

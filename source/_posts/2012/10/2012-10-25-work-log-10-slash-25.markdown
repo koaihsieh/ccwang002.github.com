@@ -10,7 +10,10 @@ categories:
 ## Re-verify Novel Candidates ##
 
 ### 把原本誤以為 map 到 exon 的 candidates 放回來
-* chr11_13342* chr22_20736* chr13_14817
+
+* chr11_13342 
+* chr22_20736
+* chr13_14817
 * chr4_5692
 * chr11_12760
 * chr3_3910
