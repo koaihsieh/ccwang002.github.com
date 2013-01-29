@@ -21,7 +21,9 @@ For windows I would prefer to setup an environment which works exactly in Unix-l
 
 ## Git
 * [here][git]
+
 [git]:/note/git
+
 
 ## Python
 * [here][python]
