@@ -97,7 +97,7 @@ task :new_post, :title do |t, args|
   filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y')}/#{Time.now.strftime('%m')}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
- end
+  end
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
@@ -192,6 +192,13 @@ task :opennote do
   note_dir = "#{source_dir}/note"
   puts "Opening note dir: #{note_dir}"
   system("open #{note_dir}")
+end
+
+desc "Open latest work page"
+task :latest do
+  latest_addr = "#{source_dir}/lab/mirna/index.markdown"
+  puts "Opening latest page: #{latest_addr}"
+  system("open #{latest_addr}")
 end
 
 # usage rake isolate[my-post]
