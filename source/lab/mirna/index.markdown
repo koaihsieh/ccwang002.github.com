@@ -9,6 +9,7 @@ footer: true
 這邊記錄了一些近期工作所需要常用的資訊。
 Here collects some useful information for recent work.
 ### To do next
+* 找出在 breast, lung cancer 表現有顯著差異的
 * use `cutadapt` and `Flicker` for adapter trimming.
 * plot using box plot.
 * 把 workflow 串起來
@@ -17,15 +18,33 @@ Here collects some useful information for recent work.
 這邊整理了最近在使用的 dataset。( from [Work Log](/blog/2012/11/13/work-log-11-slash-13/) )
 
 
-Dataset     | Cancer Type        | Sample Size
------------ | -------------      | :------------  
-[GSE29173]  | Breast Cancer      | 
-[GSE33858]  | Lung Cancer        | 32 patients <br />21 adenocarcinoma patients (20 pairs of T+NT and 1 non-pair T) <br />11 squamous cell carcinoma patients (10 pairs of T+NT and 1 non-pair T).  
-[GSE37710]  | Pancreatic Cancer  | 352 participants, sample size unknown.
+Dataset         | Cancer Type        | Sample Size
+----------      | -------------      | ------------    
+[GSE39162] (A)  | Breast Cancer      |
+[GSE33858] (B)  | Lung Cancer        | 32 patients.
+[GSE29173] (C)  | Breast Cancer      | 
+[GSE37710]      | Pancreatic Cancer  | 352 participants, sample size unknown.
 
 [GSE29173]: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE29173
+[GSE39162]: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE39162
 [GSE33858]: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE33858
 [GSE37710]: http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE37710
+
+* GSE33858
+    * 21 adenocarcinoma patients (20 pairs of T+NT and 1 non-pair T)
+    * 11 squamous cell carcinoma patients (10 pairs of T+NT and 1 non-pair T).  
+    
+* GSE29173
+    * Metaplastic: 11
+    * Apocrine: 4
+    * Atypical Medullary: 9
+    * Mucinous A: 1
+    * Adenoid: 2
+    * Cell Line: 7
+    * DCIS: 21
+    * IDC: 173
+    * Normal: 16
+    * ILC: 1
 
 ### Candidate Type
 * [candidates](/blog/2012/10/25/work-log-10-slash-25/) map to exon

@@ -43,7 +43,7 @@ $ which pip3        # should be .../test_scipy/bin/pip3
 # get the location of OpenBLAS library
 (test_scipy)$ locate libopenblas.dylib
 # for example /usr/local/Cellar/openblas/0.2.5/lib/libopenblas.dylib
-(test_scipy)$ export LAPACK=/usr/local/Cellar/openblas/0.2.5/lib/
+(test_scipy)$ export LAPACK=/usr/local/Cellar/openblas/0.2.5/lib/libopenblas.dylib
 (test_scipy)$ export BLAS=/usr/local/Cellar/openblas/0.2.5/lib/libopenblas.dylib
 {% endcodeblock %}
 
