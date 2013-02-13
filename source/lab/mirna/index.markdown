@@ -11,9 +11,14 @@ Here collects some useful information for recent work.
 ### To do next
 * 找出在 breast, lung cancer 表現有顯著差異的
 * use `cutadapt` and `Flicker` for adapter trimming.
-* plot using box plot.
+* plot using box plot. (done by R)
 * 把 workflow 串起來
+* change fortran compiler f77 to gun95
 
+{%codeblock %}
+export FC=gfortran
+export F77=$FC
+{%endcodeblock%}
 ### Dataset in use
 這邊整理了最近在使用的 dataset。( from [Work Log](/blog/2012/11/13/work-log-11-slash-13/) )
 
