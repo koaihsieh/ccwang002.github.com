@@ -11,7 +11,8 @@ Work Log of the whole dry lab team: [here](https://docs.google.com/spreadsheet/c
 
 Following is Liang Bo Wang's work summary.
 
-* Semester 101-1 [ [report](https://www.dropbox.com/s/w89jojb1liy6qfg/report-100-1.pdf) ] 
+* 02/01 [ [slides](https://speakerdeck.com/ccwang002/01) ]
+* Semester 101-1 [ [report](https://www.dropbox.com/s/bzzij5ng02516f9/report-100-1.pdf) ] 
 * 12/21 [ [slides](/blog/2012/12/21/work-log-12-slash-21/) ]
 * 12/07 [ [slides](/blog/2012/12/05/work-log-12-slash-5/) ]
 * 11/23 [ [slides](/blog/2012/11/20/work-log-11-slash-20/) ]
