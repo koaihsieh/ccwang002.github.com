@@ -22,9 +22,11 @@ footer: true
 * Advanced tutorial - Rebase:
     * [使用 git rebase 避免無謂的 merge](http://ihower.tw/blog/archives/3843/)
     * [Rebasing Merge Commits in Git](http://notes.envato.com/developers/rebasing-merge-commits-in-git/)
-    * [Master and **origin/master** have diverged, how to **undiverge** branches?](http://stackoverflow.com/questions/2452226/master-branch-and-origin-master-have-diverged-how-to-undiverge-branches)        
+    * [Master and **origin/master** have diverged, how to **undiverge** branches?](http://stackoverflow.com/questions/2452226/master-branch-and-origin-master-have-diverged-how-to-undiverge-branches)
+    * [rebase @learn.github](http://learn.github.com/p/rebasing.html)
 * Advanced tutorial (etc):
     * [Good branching model](http://nvie.com/posts/a-successful-git-branching-model/)        
+    * [interactive rebase](https://help.github.com/articles/interactive-rebase)
 * Management Tool:
     * Mac: [SourceTree](http://www.sourcetreeapp.com/), [GitX](http://gitx.frim.nl/)
     * Linux: [SmartGit](http://www.syntevo.com/smartgithg/index.html), [6 useful gui tool](http://maketecheasier.com/6-useful-graphical-git-client-for-linux/2012/01/18)
