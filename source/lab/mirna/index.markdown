@@ -9,8 +9,7 @@ footer: true
 這邊記錄了一些近期工作所需要常用的資訊。
 Here collects some useful information for recent work.
 ### To do next
-* 找出在 breast, lung cancer 表現有顯著差異的
-* use `cutadapt` and `Flicker` for adapter trimming.
+* RNA-Seq, sRNA-Seq tools installation on 171.
 * 把 workflow 串起來
 
 ### Dataset in use
