@@ -35,6 +35,25 @@ $ yum install java-1.7.0-openjdk*    # install java OpenJDK using yum
 * unzip the tar file then run it directly
 
 
+### seqtk
+* <https://github.com/lh3/seqtk>
+* Quality trimming and manipulation
+
+### Sickle
+* <https://github.com/najoshi/sickle>
+* Also for quality trimming
+
+http://www.biostars.org/p/1923/
+
+
+### Bowtie
+### BWA
+### SAMTool
+
+
+/data/NGSTool/iGenome
+
+
 {% codeblock lang:bash %}
 
 {% endcodeblock %}

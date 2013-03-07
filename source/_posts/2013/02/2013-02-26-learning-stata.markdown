@@ -44,7 +44,13 @@ $ rename var1 newvar1name
 $ replace missingvar=0 if missingvar==.
 $ gen var=var2>1    # 0 or 1
 
-# label
+# ttest
+$ ttest ahe if year == 2008, by(bachelor)
 
+# prtest
+$ prtest bachelor==0.4 if year==2008
+
+# 0, 1, 0, 1, 1, 0, 0, …, = Bernoulli RV, E(B. RV) = p of B. RV
+# pr test, H0: bachelor == mean (=p of B.RV)
 
 {% endcodeblock %}
