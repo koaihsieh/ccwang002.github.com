@@ -46,6 +46,8 @@ $ gen var=var2>1    # 0 or 1
 
 # ttest
 $ ttest ahe if year == 2008, by(bachelor)
+# first one should assume they have unequal variance
+$ …, uneuqal/welch
 
 # prtest
 $ prtest bachelor==0.4 if year==2008
