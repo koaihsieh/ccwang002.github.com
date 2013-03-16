@@ -45,3 +45,6 @@ This [link][summary] summarizes current work and provide some quick link collect
 [summary]: /lab/mirna/
 
 <center><img src="/images/macarthur.png"></center>
+
+## NGS
+* Tool collection [here](/lab/ngs/)
