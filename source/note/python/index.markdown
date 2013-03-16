@@ -45,6 +45,8 @@ One can install it using the official installer binaries, or compile it direct f
 
 [excpetion]: http://stackoverflow.com/questions/713794/catching-an-exception-while-using-a-python-with-statement
 
+### Scientific Python
+* [Scipy-lectures@Github](http://scipy-lectures.github.com/)
 
 ## Reference
 
