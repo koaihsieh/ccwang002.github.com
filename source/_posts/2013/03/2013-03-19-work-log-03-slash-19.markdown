@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Work Log - 03/19"
+date: 2013-03-19 22:18
+comments: true
+categories: 
+ - lab log
+---
+
+## Find survival data
+
+### GSE39162
+Identification of new microRNAs in paired normal and tumor breast tissue suggests a dual role for the ERBB2/Her2 gene.
+
+survival data not found
+
+### GSE29173
+MicroRNA sequence and expression analysis in breast tumors by deep sequencing.
+
+Survival data found

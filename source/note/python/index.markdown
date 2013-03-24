@@ -59,5 +59,8 @@ One can install it using the official installer binaries, or compile it direct f
 * learn by interactive samples:  
     * <http://www.learnpython.org/>
     * <http://www.codecademy.com/tracks/python> (Recommended)
+    
+* collection of good to great examples of Python by Jesse Noller   
+<http://jessenoller.com/good-to-great-python-reads/>
 
 [guide]: http://docs.python-guide.org/en/latest/
