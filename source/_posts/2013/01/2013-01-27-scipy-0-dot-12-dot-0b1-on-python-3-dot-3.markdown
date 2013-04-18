@@ -8,6 +8,8 @@ categories:
  - note
 ---
 
+Updated post is [here](/blog/2013/04/18/numpy-1-dot-7-1-and-scipy-0-dot-12-dot-0-on-python3-dot-3-via-homebrew/)
+
 ### Requirement
 * Homebrew python 3.3.0
 * tap [Samuel John's formula repo](https://github.com/samueljohn/homebrew-python)

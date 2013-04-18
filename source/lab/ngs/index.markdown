@@ -73,8 +73,11 @@ http://www.biostars.org/p/1923/
 * <http://www.broadinstitute.org/igv/>
 
 
+### Rstduio-server
 
 {% codeblock lang:bash %}
+$ wget wget http://download2.rstudio.org/rstudio-server-0.97.336-x86_64.rpm
+$ rpm -Uvh rstudio-server-0.97.336-x86_64.rpm
 
 {% endcodeblock %}
 
