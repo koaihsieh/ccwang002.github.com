@@ -6,7 +6,7 @@ comments: false
 footer: true
 ---
 
-Last updated: 2013-03-16
+Last updated: 2013-04-18
 
 ## Server-wide
 ### Chinese on Cent OS 5.4
@@ -67,11 +67,29 @@ http://www.biostars.org/p/1923/
 
 ### IGV
 * Integrative Genomics Viewer
-* 2.2.4
+* 2.2.10
 * zipped binary file from website (need registration)
 * run by `./igv.sh`
 * <http://www.broadinstitute.org/igv/>
+* genome files <http://igv.broadinstitute.org/genomes/genomes.txt>
 
+### igvtools
+* 2.2.2
+* new igvtools script in `/usr/local/bin`
+
+
+```
+#!/bin/sh
+java -Djava.awt.headless=true  -Xmx1500m  -jar /data/NGSTools/IGVTools/igvtools.jar $*
+```
+
+### Picard
+* 1.9.1
+
+run by
+```
+$ java -jar ...
+```
 
 ### Rstduio-server
 
