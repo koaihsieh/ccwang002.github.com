@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Liang's Blog</title><link href="http://cccwang002.github.io/" rel="alternate"></link><link href="http://cccwang002.github.io/feeds/test.atom.xml" rel="self"></link><id>http://cccwang002.github.io/</id><updated>2013-06-21T00:00:00+02:00</updated><entry><title>First post to Pelicon</title><link href="http://cccwang002.github.io/first-post-to-pelicon.html" rel="alternate"></link><updated>2013-06-21T00:00:00+02:00</updated><author><name>Liang Bo Wang</name></author><id>tag:cccwang002.github.io,2013-06-21:first-post-to-pelicon.html</id><summary type="html">&lt;p&gt;Hello World!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# test hello world&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Hello World&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;hello world&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+</summary></entry></feed>
